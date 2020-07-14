@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function App() {
+export default function App(): JSX.Element {
 
-  return (
-    <div className="App">
-      :)
-    </div>
-  );
+    return (
+        <div className="App">
+            :)
+        </div>
+    );
 }
