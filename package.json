@@ -6,6 +6,9 @@
     "@types/node": "12.12.50",
     "@types/react": "16.9.43",
     "@types/react-dom": "16.9.8",
+    "apollo-datasource-rest": "0.9.3",
+    "apollo-server": "2.15.1",
+    "graphql-tools": "6.0.13",
     "node-sass": "4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -13,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "nodemon",
     "build": "react-scripts build",
     "eslint": "eslint --cache --ext .ts,.tsx src",
     "eslint:dump": "eslint --print-config ./.eslintrc.json"
@@ -34,12 +38,14 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "3.6.1",
-    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-no-loops": "0.3.0",
     "eslint-plugin-optimize-regex": "1.2.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.20.3",
     "eslint-plugin-react-hooks": "4.0.8",
     "eslint-plugin-sonarjs": "0.5.0",
+    "nodemon": "2.0.4",
+    "ts-node": "8.10.2",
     "typescript": "3.9.6"
   }
 }
