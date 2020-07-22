@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.header__icon {
+  width: 300px;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #D8DDE6;
+}
+
+.header__buttons-wrapper {
+  display: flex;
+}
+
+.header__button {
+  width: 270px;
+  height: 20px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__button_active {
+  border-bottom: 3px solid #3A7CFF;
+  background-color: #EBF2FF;
+}
+
+.header__login-information {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-name {
+  width: 270px;
+  height: 20px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}

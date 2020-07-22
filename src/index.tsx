@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './client/App';
 import './index.scss';
+import { MainLayout } from './client/MainLaytout';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <MainLayout />
     </React.StrictMode>,
     document.getElementById('root')
 );

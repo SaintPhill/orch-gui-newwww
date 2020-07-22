@@ -10,6 +10,8 @@ const server = new ApolloServer({
     }),
 });
 
+// eslint-disable-next-line promise/catch-or-return,promise/always-return
 server.listen().then(({ url }) => {
+    // eslint-disable-next-line
     console.log(`🚀 Server ready at ${url}`);
 });
