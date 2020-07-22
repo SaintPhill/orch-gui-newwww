@@ -1,10 +1,15 @@
 .button {
-    padding: 9px 50px 10px 47px;
+    min-width: 176px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #3A7CFF;
     box-sizing: border-box;
     border-radius: 6px;
     background: #FFFFFF;
 
+    font-family: 'Roboto medium', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -14,7 +19,7 @@
     color: #3A7CFF;
 }
 
-.button--primary {
+.button_primary {
     background: #3A7CFF;
     border-color: #3A7CFF;
     color: #FFFFFF

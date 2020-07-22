@@ -1,22 +1,30 @@
-import React from 'react'
+ import React from 'react'
+ import classNames from 'classnames'
+
 import './button.scss'
 
 type ButtonProps = {
-    trait: string,
-    children: string
+    isPrimary: boolean,
+    children: string,
+    onClick(): void,
 }
 
-export const Button: React.FC<ButtonProps> = ({ trait, children, ...props }) => {
-  return (
-    <button
-      {...props}
-      className={`button 
-        ${trait === 'primary' && 'button--primary'}`
-    }
-    >
-      {children}
-    </button>
-  )
+export const Button: React.FC<ButtonProps> = ({ isPrimary, children, onClick }) => {
+    const btnClass = classNames(
+        'button',
+        {
+            'button_primary': isPrimary
+        }
+    )
+
+    return (
+        <button
+            onClick={onClick}
+            className={btnClass}
+        >
+            {children}
+        </button>
+    )
 }
 
 
