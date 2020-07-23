@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './SideBar.scss';
+import './Filters.scss';
 
-export function SideBarTemplate(): JSX.Element {
-    const ROOT_CLASS = 'side-bar';
+export function FiltersTemplate(): JSX.Element {
+    const ROOT_CLASS = 'filters';
 
     return (
         <div className={ROOT_CLASS}>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header } from '../Header';
-import { SideBar } from '../SideBar';
+import { Filters } from '../Filters';
 import './MainLaytout.scss';
 
 export function MainLayoutTemplate(): JSX.Element {
@@ -11,7 +11,7 @@ export function MainLayoutTemplate(): JSX.Element {
         <div className={ROOT_CLASS}>
             <Header />
             <div className={`${ROOT_CLASS}__content`}>
-                <SideBar />
+                <Filters />
             </div>
         </div>
     );
