@@ -1,15 +1,15 @@
- import React from 'react'
- import classNames from 'classnames'
-
+import React from 'react'
 import './button.scss'
 
-type ButtonProps = {
+import classNames from 'classnames'
+
+type Props = {
     isPrimary: boolean,
     children: string,
     onClick(): void,
 }
 
-export const Button: React.FC<ButtonProps> = ({ isPrimary, children, onClick }) => {
+export function ButtonTemplate({ isPrimary, children, onClick }: Props) {
     const btnClass = classNames(
         'button',
         {
@@ -26,5 +26,3 @@ export const Button: React.FC<ButtonProps> = ({ isPrimary, children, onClick }) 
         </button>
     )
 }
-
-

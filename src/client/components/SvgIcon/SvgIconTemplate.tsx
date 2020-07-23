@@ -1,8 +1,8 @@
 import React from 'react'
+import classnames from 'classnames'
+
 import sprite from '../../images/logos/sprite.svg'
 import './SvgIcon.scss'
-
-import classnames from 'classnames'
 
 interface Props {
     spriteId: string,

@@ -6,6 +6,7 @@
 
 .authorization__logo {
     max-height: 44px;
+    width: 150px;
     margin-left: 70px;
     margin-right: 70px;
 }
@@ -51,7 +52,6 @@
 
 .authorization-form__input {
     border: 1px solid rgba(58, 124, 255, 0.3);
-    box-sizing: border-box;
-    min-width: 360px;
-    min-height: 34px;
+    width: 360px;
+    height: 34px;
 }
