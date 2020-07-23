@@ -10,8 +10,32 @@ export function AuthorizationTemplate() {
         password: ''
     })
 
-    const login = () => {
+    const [error, setError] = useState('')
+
+    const login = (e: any) => {
+        e.preventDefault()
+
         console.log('ВОЙТИ')
+
+        if (!user.login && !user.password) {
+            setError('Неверное имя пользователя или пароль')
+        }
+
+        if (user.login && user.login !== 'admin' && !user.password) {
+            setError('Неверное имя пользователя или пароль')
+        }
+
+        if (user.login === 'admin' && !user.password) {
+            setError('Пароль не соответствует требованиям')
+        }
+
+        if (user.login === 'admin' && user.password !== 'password') {
+            setError('Пароль не соответствует требованиям')
+        }
+
+        if (user.login === 'admin' && user.password === 'password') {
+            setError('')
+        }
     }
 
     const onChangeUser = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,6 +47,8 @@ export function AuthorizationTemplate() {
 
     const ROOT_CLASS = 'authorization'
 
+    console.log('user -', user);
+    
     return (
         <div className={ROOT_CLASS}>
             <header className={`${ROOT_CLASS}__header`}>
@@ -38,7 +64,7 @@ export function AuthorizationTemplate() {
             <h1 className={`${ROOT_CLASS}__title`}>
                 Вход в систему управления оркестрационными процессами
             </h1>
-            <form className={`${ROOT_CLASS}-form`}>
+            <form className={`${ROOT_CLASS}-form`} onSubmit={(e) => login(e)}>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
                     <input 
@@ -58,10 +84,12 @@ export function AuthorizationTemplate() {
                         onChange={onChangeUser}
                         value={user.password}
                     />
+                    <div className={`${ROOT_CLASS}-form__error`}>
+                        {error}
+                    </div>
                 </div>
                 <Button
                     isPrimary={true}
-                    onClick={login}
                 >
                     Вход
                 </Button>

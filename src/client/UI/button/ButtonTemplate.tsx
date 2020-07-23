@@ -6,10 +6,9 @@ import classNames from 'classnames'
 type Props = {
     isPrimary: boolean,
     children: string,
-    onClick(): void,
 }
 
-export function ButtonTemplate({ isPrimary, children, onClick }: Props) {
+export function ButtonTemplate({ isPrimary, children }: Props) {
     const btnClass = classNames(
         'button',
         {
@@ -19,7 +18,7 @@ export function ButtonTemplate({ isPrimary, children, onClick }: Props) {
 
     return (
         <button
-            onClick={onClick}
+            type='submit'
             className={btnClass}
         >
             {children}
