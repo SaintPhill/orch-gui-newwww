@@ -4,6 +4,11 @@
   height: 100vh;
 }
 
+.main-layout__tables {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-layout__content {
   display: flex;
   flex-grow: 1;

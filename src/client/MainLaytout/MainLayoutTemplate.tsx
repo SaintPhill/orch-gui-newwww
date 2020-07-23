@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Header } from '../Header';
 import { Filters } from '../Filters';
+import { FiltrationResult } from '../FiltrationResult';
+import { Detalization } from '../Detalization';
 import './MainLaytout.scss';
 
 export function MainLayoutTemplate(): JSX.Element {
@@ -12,6 +14,10 @@ export function MainLayoutTemplate(): JSX.Element {
             <Header />
             <div className={`${ROOT_CLASS}__content`}>
                 <Filters />
+                <div className={`${ROOT_CLASS}__tables`}>
+                    <FiltrationResult />
+                    <Detalization />
+                </div>
             </div>
         </div>
     );
