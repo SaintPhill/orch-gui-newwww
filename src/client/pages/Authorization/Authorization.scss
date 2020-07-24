@@ -1,0 +1,65 @@
+.authorization__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.authorization__logo {
+    max-height: 44px;
+    width: 150px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.authorization__title {
+    margin: 95px auto 150px auto;
+    max-width: 770px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+
+    color: #000000;
+}
+
+.authorization-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorization-form__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+}
+
+.authorization-form__label {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+    &::after {
+        content: "*";
+        color: red;
+    }
+}
+
+.authorization-form__input {
+    border: 1px solid rgba(58, 124, 255, 0.3);
+    width: 360px;
+    height: 34px;
+}
+
+.authorization-form__error {
+   color: red;
+}
+
+.form__error {
+    border: 1px solid red
+}
