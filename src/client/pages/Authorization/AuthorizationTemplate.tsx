@@ -4,37 +4,66 @@ import './Authorization.scss'
 import { Button } from '../../UI/button'
 import { SvgIcon } from '../../components/SvgIcon'
 
-export function AuthorizationTemplate() {
+export function AuthorizationTemplate(props: any) {
     const [user, setUser] = useState({
         login: '',
         password: ''
     })
 
-    const [error, setError] = useState('')
+    const [error, setError] = useState({
+        errorText: '',
+        login: false,
+        password: false,
+    })
 
     const login = (e: any) => {
         e.preventDefault()
 
-        console.log('ВОЙТИ')
-
         if (!user.login && !user.password) {
-            setError('Неверное имя пользователя или пароль')
+            setError({
+                ...error,
+                errorText: 'Неверное имя пользователя или пароль',
+                login: true,
+                password: true,
+            })
         }
 
         if (user.login && user.login !== 'admin' && !user.password) {
-            setError('Неверное имя пользователя или пароль')
+            setError({
+                ...error,
+                errorText: 'Неверное имя пользователя или пароль',
+                login: true,
+                password: true,
+            })
         }
 
         if (user.login === 'admin' && !user.password) {
-            setError('Пароль не соответствует требованиям')
+            setError({
+                ...error,
+                errorText: 'Пароль не соответствует требованиям',
+                login: false,
+                password: true,
+            })
         }
 
         if (user.login === 'admin' && user.password !== 'password') {
-            setError('Пароль не соответствует требованиям')
+            setError({
+                ...error,
+                errorText: 'Пароль не соответствует требованиям',
+                login: false,
+                password: true,
+            })
         }
 
         if (user.login === 'admin' && user.password === 'password') {
-            setError('')
+            setError({
+                ...error,
+                errorText: '',
+                login: false,
+                password: false,
+            })
+
+            props.login()
         }
     }
 
@@ -46,8 +75,6 @@ export function AuthorizationTemplate() {
     }
 
     const ROOT_CLASS = 'authorization'
-
-    console.log('user -', user);
     
     return (
         <div className={ROOT_CLASS}>
@@ -69,7 +96,7 @@ export function AuthorizationTemplate() {
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
                     <input 
                         type="text" 
-                        className={`${ROOT_CLASS}-form__input`}
+                        className={`${ROOT_CLASS}-form__input ${error.login ? 'form__error' : null}`}
                         name='login'
                         onChange={onChangeUser}
                         value={user.login}
@@ -79,13 +106,13 @@ export function AuthorizationTemplate() {
                     <label className={`${ROOT_CLASS}-form__label`}>Пароль</label>
                     <input 
                         type="password" 
-                        className={`${ROOT_CLASS}-form__input`}
+                        className={`${ROOT_CLASS}-form__input ${error.password ? 'form__error' : null}`}
                         name='password'
                         onChange={onChangeUser}
                         value={user.password}
                     />
                     <div className={`${ROOT_CLASS}-form__error`}>
-                        {error}
+                        {error.errorText}
                     </div>
                 </div>
                 <Button
