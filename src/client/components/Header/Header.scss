@@ -50,3 +50,19 @@
   font-size: 18px;
   line-height: 18px;
 }
+
+.header__logout-button {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #AFB5C1;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__logout-button-icon {
+  width: 16px;
+  height: 17px;
+  margin-left: 10px;
+}

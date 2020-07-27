@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Header.scss';
 import { SvgIcon } from '../SvgIcon/';
+import { Button } from '../../UI/button';
 
 export function HeaderTemplate(): JSX.Element {
     const ROOT_CLASS = 'header';
@@ -22,6 +23,9 @@ export function HeaderTemplate(): JSX.Element {
                     <div className={`${ROOT_CLASS}__user-name`}>
                         Фамилияя Имя / Должность
                     </div>
+                    <Button svgId={'logout'} className={`${ROOT_CLASS}__logout-button`}>
+                        Выход
+                    </Button>
                 </div>
             </div>
         </header>
