@@ -6,6 +6,7 @@ import { SvgIcon } from '../../components/SvgIcon';
 
 interface Props {
     svgId?: string
+    theme?: string
     isPrimary?: boolean
     className?: string
     children?: React.ReactNode
@@ -21,11 +22,14 @@ export function ButtonTemplate({
     onClick,
     svgId,
     className,
+    theme,
 }: Props): JSX.Element {
+    const ROOT_CLASS = 'button';
     const btnClass = classNames(
-        'button',
+        ROOT_CLASS,
         {
-            'button_primary': isPrimary,
+            [`${ROOT_CLASS}_theme_${theme}-primary`]: isPrimary,
+            [`${ROOT_CLASS}_theme_${theme}`]: !!theme,
             [String(className)]: !!className,
         }
     );

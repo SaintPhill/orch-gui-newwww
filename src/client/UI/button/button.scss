@@ -1,25 +1,34 @@
 .button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+
+    // Eliminates dotted focus outlines in Firefox
+    &::-moz-focus-inner {
+        border: none;
+    }
+}
+
+.button_theme_blue {
     width: 176px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #3A7CFF;
-    box-sizing: border-box;
     border-radius: 6px;
     background: #FFFFFF;
-
     font-family: 'Roboto medium', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    cursor: pointer;
-
     color: #3A7CFF;
 }
 
-.button_primary {
+.button_theme_blue-primary {
     background: #3A7CFF;
     border-color: #3A7CFF;
     color: #FFFFFF
