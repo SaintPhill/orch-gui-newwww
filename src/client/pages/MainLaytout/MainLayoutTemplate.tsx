@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Header } from '../Header';
-import { Filters } from '../Filters';
-import { FiltrationResult } from '../FiltrationResult';
-import { Detalization } from '../Detalization';
+import { Header } from '../../components/Header';
+import { Filters } from '../../components/Filters';
+import { FiltrationResult } from '../../components/FiltrationResult';
+import { Detalization } from '../../components/Detalization';
 import './MainLaytout.scss';
 
 export function MainLayoutTemplate(): JSX.Element {

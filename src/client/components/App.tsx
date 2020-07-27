@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 
 import { Authorization } from '../pages/Authorization';
-import Layout from './Layout';
+import { MainLayout } from '../pages/MainLaytout';
 
 export default function App(): JSX.Element {
-    const [isLogin, setIsLogin] = useState(false)
+    const [isLogin, setIsLogin] = useState(true);
 
     const login = () => {
-        setIsLogin(true)
-    }
+        setIsLogin(true);
+    };
 
     return (
         <div className="App">
-            {isLogin 
-            ?   <Layout />
-            :   <Authorization
+            {isLogin
+                ? <MainLayout />
+                : <Authorization
                     login={login}
                 />
             }
