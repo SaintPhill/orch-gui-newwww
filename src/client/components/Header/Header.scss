@@ -1,11 +1,12 @@
 .header {
   display: flex;
+  max-height: 55px;
   padding-left: 35px;
   padding-right: 35px;
 }
 
 .header__icon {
-  width: 300px;
+  padding-top: 15px;
 }
 
 .header__wrapper {
@@ -20,11 +21,11 @@
 }
 
 .header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 55px;
-  padding-bottom: 15px;
-  padding-top: 20px;
-  text-align: center;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
