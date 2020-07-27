@@ -130,14 +130,19 @@
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_$" }],
 
-
     "react/no-access-state-in-setstate": "error",
     "react/no-danger": "error",
     "react/no-multi-comp": "error",
     "react/no-this-in-sfc": "error",
     "react/prefer-stateless-function": "error",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-    "react/jsx-no-bind": "error",
+    "react/jsx-no-bind": [{
+      "ignoreDOMComponents": true,
+      "ignoreRefs": true,
+      "allowArrowFunctions": true,
+      "allowFunctions": true,
+      "allowBind": true
+    }],
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
 
