@@ -5,6 +5,10 @@ import { Button } from '../../UI/button'
 import { SvgIcon } from '../../components/SvgIcon'
 
 export function AuthorizationTemplate(props: any) {
+
+    console.log('AuthorizationTemplate appState', props.appState);
+    
+
     const [user, setUser] = useState({
         login: '',
         password: ''
@@ -21,7 +25,6 @@ export function AuthorizationTemplate(props: any) {
 
         if (!user.login && !user.password) {
             setError({
-                ...error,
                 errorText: 'Неверное имя пользователя или пароль',
                 login: true,
                 password: true,
@@ -30,7 +33,6 @@ export function AuthorizationTemplate(props: any) {
 
         if (user.login && user.login !== 'admin' && !user.password) {
             setError({
-                ...error,
                 errorText: 'Неверное имя пользователя или пароль',
                 login: true,
                 password: true,
@@ -39,7 +41,6 @@ export function AuthorizationTemplate(props: any) {
 
         if (user.login === 'admin' && !user.password) {
             setError({
-                ...error,
                 errorText: 'Пароль не соответствует требованиям',
                 login: false,
                 password: true,
@@ -48,7 +49,6 @@ export function AuthorizationTemplate(props: any) {
 
         if (user.login === 'admin' && user.password !== 'password') {
             setError({
-                ...error,
                 errorText: 'Пароль не соответствует требованиям',
                 login: false,
                 password: true,
@@ -57,7 +57,6 @@ export function AuthorizationTemplate(props: any) {
 
         if (user.login === 'admin' && user.password === 'password') {
             setError({
-                ...error,
                 errorText: '',
                 login: false,
                 password: false,
