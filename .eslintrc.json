@@ -136,13 +136,7 @@
     "react/no-this-in-sfc": "error",
     "react/prefer-stateless-function": "error",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-    "react/jsx-no-bind": [{
-      "ignoreDOMComponents": true,
-      "ignoreRefs": true,
-      "allowArrowFunctions": true,
-      "allowFunctions": true,
-      "allowBind": true
-    }],
+    "react/jsx-no-bind": "error",
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
 

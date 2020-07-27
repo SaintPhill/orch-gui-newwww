@@ -1,10 +1,10 @@
- import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 import './Authorization.scss';
 import { Button } from '../../UI/button';
 import { SvgIcon } from '../../components/SvgIcon';
 
-export function AuthorizationTemplate(props: any) {
+export function AuthorizationTemplate(props: any): JSX.Element {
     const [user, setUser] = useState({
         login: '',
         password: '',
@@ -16,42 +16,22 @@ export function AuthorizationTemplate(props: any) {
         password: false,
     });
 
-    const login = (e: any) => {
+    function login(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
         e.preventDefault();
 
-        if (!user.login && !user.password) {
+        if (!user.login && !user.password || user.login && user.login !== 'admin' && !user.password || user.password === 'password' && !user.login || user.password === 'password' && user.login !== 'admin') {
             setError({
                 errorText: 'Неверное имя пользователя или пароль',
                 login: true,
                 password: true,
             });
-        }
-
-        if (user.login && user.login !== 'admin' && !user.password) {
-            setError({
-                errorText: 'Неверное имя пользователя или пароль',
-                login: true,
-                password: true,
-            });
-        }
-
-        if (user.login === 'admin' && !user.password) {
+        } else if (user.login === 'admin' && !user.password || user.login === 'admin' && user.password !== 'password') {
             setError({
                 errorText: 'Пароль не соответствует требованиям',
                 login: false,
                 password: true,
             });
-        }
-
-        if (user.login === 'admin' && user.password !== 'password') {
-            setError({
-                errorText: 'Пароль не соответствует требованиям',
-                login: false,
-                password: true,
-            });
-        }
-
-        if (user.login === 'admin' && user.password === 'password') {
+        } else {
             setError({
                 errorText: '',
                 login: false,
@@ -59,14 +39,15 @@ export function AuthorizationTemplate(props: any) {
             });
             props.login();
         }
-    };
+    }
 
-    const onChangeUser = (e: React.ChangeEvent<HTMLInputElement>) => {
+    function onChangeUser(e: React.ChangeEvent<HTMLInputElement>): void {
         setUser({
             ...user,
             [e.target.name]: e.target.value,
         });
-    };
+    }
+
     const ROOT_CLASS = 'authorization';
     return (
         <div className={ROOT_CLASS}>
@@ -83,7 +64,7 @@ export function AuthorizationTemplate(props: any) {
             <h1 className={`${ROOT_CLASS}__title`}>
                 Вход в систему управления оркестрационными процессами
             </h1>
-            <form className={`${ROOT_CLASS}-form`} onSubmit={(e) => login(e)}>
+            <form className={`${ROOT_CLASS}-form`}>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
                     <input
@@ -109,6 +90,7 @@ export function AuthorizationTemplate(props: any) {
                 </div>
                 <Button
                     isPrimary={true}
+                    onClick={login}
                 >
                     Вход
                 </Button>

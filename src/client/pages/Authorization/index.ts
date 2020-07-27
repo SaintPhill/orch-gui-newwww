@@ -1,1 +1,1 @@
-export { AuthorizationTemplate as Authorization} from './AuthorizationTemplate';
+export { AuthorizationTemplate as Authorization } from './AuthorizationTemplate';

@@ -1,27 +1,29 @@
-import React from 'react'
-import './button.scss'
+import React from 'react';
+import './button.scss';
 
-import classNames from 'classnames'
+import classNames from 'classnames';
 
 type Props = {
-    isPrimary: boolean,
-    children: string,
-}
+    isPrimary: boolean
+    children: string
+    onClick: (e: any) => void
+};
 
-export function ButtonTemplate({ isPrimary, children }: Props) {
+export function ButtonTemplate({ isPrimary, children, onClick }: Props): JSX.Element {
     const btnClass = classNames(
         'button',
         {
-            'button_primary': isPrimary
+            'button_primary': isPrimary,
         }
-    )
+    );
 
     return (
         <button
-            type='submit'
+            type="submit"
             className={btnClass}
+            onClick={onClick}
         >
             {children}
         </button>
-    )
+    );
 }

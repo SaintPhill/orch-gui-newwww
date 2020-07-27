@@ -3,15 +3,13 @@ import React, { useState } from 'react';
 
 import { Authorization } from '../pages/Authorization';
 import Layout from './Layout';
-import { type } from 'os';
 
 export default function App(): JSX.Element {
     const [isLogin, setIsLogin] = useState(false);
 
-    const login = () => {
+    function login(): void{
         setIsLogin(true);
-        return type;
-    };
+    }
 
     return (
         <div className="App">

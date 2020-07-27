@@ -9,9 +9,7 @@ interface Props {
     className?: string
 }
 
-
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export function SvgIconTemplate({ spriteId, className }: Props) {
+export function SvgIconTemplate({ spriteId, className }: Props): JSX.Element {
     const ROOT_CLASS = 'svg-icon';
     const iconClassName = classnames(
         ROOT_CLASS,

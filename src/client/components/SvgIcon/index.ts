@@ -1,1 +1,1 @@
-export {SvgIconTemplate as SvgIcon} from './SvgIconTemplate'
+export { SvgIconTemplate as SvgIcon } from './SvgIconTemplate';
