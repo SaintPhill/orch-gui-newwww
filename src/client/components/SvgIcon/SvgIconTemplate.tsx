@@ -1,23 +1,23 @@
-import React from 'react'
-import classnames from 'classnames'
+import React from 'react';
+import classnames from 'classnames';
 
-import sprite from '../../images/logos/sprite.svg'
-import './SvgIcon.scss'
+import sprite from '../../images/logos/sprite.svg';
+import './SvgIcon.scss';
 
 interface Props {
-    spriteId: string,
-    className: string
+    spriteId: string
+    className?: string
 }
 
 
-export function SvgIconTemplate({ spriteId, className }: Props) {
-    const ROOT_CLASS = 'svg-icon'
+export function SvgIconTemplate({ spriteId, className }: Props): JSX.Element {
+    const ROOT_CLASS = 'svg-icon';
     const iconClassName = classnames(
         ROOT_CLASS,
         {
             [`${className}`]: !!className,
         }
-    )
+    );
 
     return (
         <svg className={iconClassName}>
@@ -25,5 +25,5 @@ export function SvgIconTemplate({ spriteId, className }: Props) {
                 xlinkHref={`${sprite}#${spriteId}`}
             />
         </svg>
-    )
+    );
 }

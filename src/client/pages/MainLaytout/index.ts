@@ -1,1 +1,1 @@
-export { MainLayoutTemplate as MainLayout } from './MainLayoutTemplate';
+export { MainLayoutBehavior as MainLayout } from './MainLayoutBehavior';

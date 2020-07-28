@@ -19,6 +19,7 @@
   },
   "plugins": ["react", "react-hooks", "promise", "optimize-regex", "sonarjs", "@typescript-eslint", "no-loops"],
   "rules": {
+    "react/prop-types": 0,
     "no-loops/no-loops": 2,
     "no-shadow": ["error", { "builtinGlobals": true }],
     "jsx-quotes": ["error", "prefer-double"],

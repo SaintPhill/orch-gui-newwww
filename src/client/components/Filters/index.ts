@@ -1,1 +1,1 @@
-export { FiltersTemplate as Filters } from './FiltersTemplate';
+export { FiltersBehavior as Filters } from './FiltersBehavior';
