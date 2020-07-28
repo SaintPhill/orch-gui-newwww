@@ -1,7 +1,7 @@
 import { mergeSchemas } from 'graphql-tools';
 
-import { CarsSchema } from './Car';
+import { ProcessesSchema } from './Processes';
 
 export const schema = mergeSchemas({
-    schemas: [CarsSchema],
+    schemas: [ProcessesSchema],
 });

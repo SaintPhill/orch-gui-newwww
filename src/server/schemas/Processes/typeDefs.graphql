@@ -1,0 +1,17 @@
+type Query {
+    processes: [Process]
+}
+
+type Process {
+    id: Int!
+    alias: String!
+    name: String!
+    steps: [Step!]
+}
+
+type Step {
+    id: Int!
+    name: String!
+    alias: String!
+    stepIndex: Int!
+}

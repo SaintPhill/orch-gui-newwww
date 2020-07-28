@@ -1,12 +1,12 @@
 import { ApolloServer } from 'apollo-server';
 
-import { MvrpAPI } from './datasources/MvrpAPI';
 import { schema } from './schemas';
+import { RestAPI } from './datasources/RestAPI';
 
 const server = new ApolloServer({
     schema,
     dataSources: () => ({
-        mvrpAPI: new MvrpAPI(),
+        restAPI: new RestAPI(),
     }),
 });
 
