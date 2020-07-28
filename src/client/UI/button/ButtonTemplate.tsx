@@ -1,12 +1,13 @@
 import React from 'react';
-import './button.scss';
 
 import classNames from 'classnames';
+
+import './button.scss';
 
 type Props = {
     isPrimary: boolean
     children: string
-    onClick: (e: any) => void
+    onClick: (event: any) => void
 };
 
 export function ButtonTemplate({ isPrimary, children, onClick }: Props): JSX.Element {
@@ -19,7 +20,6 @@ export function ButtonTemplate({ isPrimary, children, onClick }: Props): JSX.Ele
 
     return (
         <button
-            type="submit"
             className={btnClass}
             onClick={onClick}
         >

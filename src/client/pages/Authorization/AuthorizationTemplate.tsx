@@ -1,55 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import './Authorization.scss';
 import { Button } from '../../UI/button';
 import { SvgIcon } from '../../UI/SvgIcon';
 
-export function AuthorizationTemplate(props: any): JSX.Element {
-    const [user, setUser] = useState({
-        login: '',
-        password: '',
-    });
+import classNames from 'classnames';
 
-    const [error, setError] = useState({
-        errorText: '',
-        login: false,
-        password: false,
-    });
+import './Authorization.scss';
 
-    function login(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
-        e.preventDefault();
+interface Props {
+    ROOT_CLASS: string
+    error: Record<string, any>
+    user: Record<string, any>
+    onChangeUser(event: React.ChangeEvent<HTMLInputElement>): void
+    login(event: React.MouseEvent): void
+}
 
-        if (!user.login && !user.password || user.login && user.login !== 'admin' && !user.password
-            || user.password === 'password' && !user.login || user.password === 'password' && user.login !== 'admin') {
-            setError({
-                errorText: 'Неверное имя пользователя или пароль',
-                login: true,
-                password: true,
-            });
-        } else if (user.login === 'admin' && !user.password || user.login === 'admin' && user.password !== 'password') {
-            setError({
-                errorText: 'Пароль не соответствует требованиям',
-                login: false,
-                password: true,
-            });
-        } else {
-            setError({
-                errorText: '',
-                login: false,
-                password: false,
-            });
-            props.login();
+export default function AuthorizationTemplate({ ROOT_CLASS, error, onChangeUser, user, login }: Props): JSX.Element {
+    const inputClassLogin = classNames(
+        `${ROOT_CLASS}-form__input`,
+        {
+            'form__error': error.login,
         }
-    }
+    );
 
-    function onChangeUser(e: React.ChangeEvent<HTMLInputElement>): void {
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value,
-        });
-    }
+    const inputClassPassword = classNames(
+        `${ROOT_CLASS}-form__input`,
+        {
+            'form__error': error.password,
+        }
+    );
 
-    const ROOT_CLASS = 'authorization';
     return (
         <div className={ROOT_CLASS}>
             <header className={`${ROOT_CLASS}__header`}>
@@ -70,7 +50,7 @@ export function AuthorizationTemplate(props: any): JSX.Element {
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
                     <input
                         type="text"
-                        className={`${ROOT_CLASS}-form__input ${error.login ? 'form__error' : null}`}
+                        className={inputClassLogin}
                         name="login"
                         onChange={onChangeUser}
                         value={user.login}
@@ -80,7 +60,7 @@ export function AuthorizationTemplate(props: any): JSX.Element {
                     <label className={`${ROOT_CLASS}-form__label`}>Пароль</label>
                     <input
                         type="password"
-                        className={`${ROOT_CLASS}-form__input ${error.password ? 'form__error' : null}`}
+                        className={inputClassPassword}
                         name="password"
                         onChange={onChangeUser}
                         value={user.password}
