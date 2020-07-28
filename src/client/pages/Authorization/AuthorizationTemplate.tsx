@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Authorization.scss';
 import { Button } from '../../UI/button';
-import { SvgIcon } from '../../components/SvgIcon';
+import { SvgIcon } from '../../UI/SvgIcon';
 
 export function AuthorizationTemplate(props: any): JSX.Element {
     const [user, setUser] = useState({
@@ -19,7 +19,8 @@ export function AuthorizationTemplate(props: any): JSX.Element {
     function login(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
         e.preventDefault();
 
-        if (!user.login && !user.password || user.login && user.login !== 'admin' && !user.password || user.password === 'password' && !user.login || user.password === 'password' && user.login !== 'admin') {
+        if (!user.login && !user.password || user.login && user.login !== 'admin' && !user.password
+            || user.password === 'password' && !user.login || user.password === 'password' && user.login !== 'admin') {
             setError({
                 errorText: 'Неверное имя пользователя или пароль',
                 login: true,
@@ -88,12 +89,7 @@ export function AuthorizationTemplate(props: any): JSX.Element {
                         {error.errorText}
                     </div>
                 </div>
-                <Button
-                    isPrimary={true}
-                    onClick={login}
-                >
-                    Вход
-                </Button>
+                <Button isPrimary onClick={login}>Вход</Button>
             </form>
         </div>
     );

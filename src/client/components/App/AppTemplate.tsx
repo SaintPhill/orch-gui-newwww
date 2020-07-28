@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 
-import { Authorization } from '../pages/Authorization';
-import Layout from './Layout';
+import { Authorization } from '../../pages/Authorization';
+import Layout from '../Layout';
 
-export default function App(): JSX.Element {
+export function AppTemplate(): JSX.Element {
     const [isLogin, setIsLogin] = useState(false);
 
     function login(): void{
