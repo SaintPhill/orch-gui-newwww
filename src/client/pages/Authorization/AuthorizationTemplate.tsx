@@ -1,7 +1,7 @@
  import React, { useState } from 'react'
 
 import './Authorization.scss'
-import { Button } from '../../UI/button'
+import { Button } from '../../UI/Button'
 import { SvgIcon } from '../../components/SvgIcon'
 
 export function AuthorizationTemplate(props: any) {
@@ -75,7 +75,7 @@ export function AuthorizationTemplate(props: any) {
     }
 
     const ROOT_CLASS = 'authorization'
-    
+
     return (
         <div className={ROOT_CLASS}>
             <header className={`${ROOT_CLASS}__header`}>
@@ -94,8 +94,8 @@ export function AuthorizationTemplate(props: any) {
             <form className={`${ROOT_CLASS}-form`} onSubmit={(e) => login(e)}>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         className={`${ROOT_CLASS}-form__input ${error.login ? 'form__error' : null}`}
                         name='login'
                         onChange={onChangeUser}
@@ -104,8 +104,8 @@ export function AuthorizationTemplate(props: any) {
                 </div>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пароль</label>
-                    <input 
-                        type="password" 
+                    <input
+                        type="password"
                         className={`${ROOT_CLASS}-form__input ${error.password ? 'form__error' : null}`}
                         name='password'
                         onChange={onChangeUser}

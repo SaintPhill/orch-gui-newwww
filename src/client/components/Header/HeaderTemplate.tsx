@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Header.scss';
 import { SvgIcon } from '../SvgIcon/';
-import { Button } from '../../UI/button';
+import { Button } from '../../UI/Button';
 
 export function HeaderTemplate(): JSX.Element {
     const ROOT_CLASS = 'header';

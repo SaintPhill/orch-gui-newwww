@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import { Button } from '../../UI/button';
+import { Button } from '../../UI/Button';
 import './Filters.scss';
 
 interface Props {

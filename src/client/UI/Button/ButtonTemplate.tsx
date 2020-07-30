@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './button.scss';
 import { SvgIcon } from '../../components/SvgIcon';
+import './Button.scss';
 
 interface Props {
     svgId?: string
