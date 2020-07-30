@@ -1,5 +1,5 @@
 import { RESTDataSource } from 'apollo-datasource-rest';
-import { Processes, ProcessErrors } from 'orch-backend-types';
+import { Processes } from 'orch-backend-types';
 
 export class RestAPI extends RESTDataSource {
     constructor() {
@@ -11,7 +11,7 @@ export class RestAPI extends RESTDataSource {
         return this.get('processes');
     }
 
-    async getProcessErrors(): Promise<ProcessErrors.Get> {
+    async getProcessErrors(): Promise<Processes.Errors> {
         return this.get('errors');
     }
 }

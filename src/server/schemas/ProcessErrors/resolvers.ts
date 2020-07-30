@@ -1,7 +1,7 @@
 import { toApolloError } from 'apollo-server-core';
 import { Processes } from 'orch-backend-types';
 
-type ProcessErrorsType = Processes.Get_Processes;
+type ProcessErrorsType = Processes.Get_Errors;
 
 export const resolvers = {
     Query: {
