@@ -1,17 +1,25 @@
 type Query {
-    processes: [Process]
+    processes: [Process!]
+    processErrors: [ProcessError!]
+    processStatuses: [String!]
 }
 
 type Process {
     id: Int!
     alias: String!
     name: String!
-    steps: [Step!]
+    steps: [ProcessStep!]
 }
 
-type Step {
+type ProcessStep {
     id: Int!
     name: String!
     alias: String!
     stepIndex: Int!
+}
+
+type ProcessError {
+    id: Int!
+    name: String!
+    status: String!
 }

@@ -1,9 +1,0 @@
-type Query {
-    processErrors: [Error]
-}
-
-type Error {
-    id: Int!
-    name: String!
-    status: String!
-}
