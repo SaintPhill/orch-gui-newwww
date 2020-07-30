@@ -5,10 +5,10 @@ type ProcessesType = Processes.Get_Processes;
 
 export const resolvers = {
     Query: {
-        async processes(_: undefined, __: undefined, { dataSources }: any) {
+        async processes(_: undefined, __: undefined, { dataSources: { restAPI } }: any) {
             let processes: ProcessesType;
             try {
-                processes = await dataSources.restAPI.getProcesses();
+                processes = await restAPI.getProcesses();
             } catch (error) {
                 throw toApolloError(error, error.code);
             }
