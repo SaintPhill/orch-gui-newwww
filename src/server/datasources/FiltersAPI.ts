@@ -1,21 +1,21 @@
 import { RESTDataSource } from 'apollo-datasource-rest';
-import { Processes } from 'orch-backend-types';
+import { Filters } from 'orch-backend-types';
 
-export class ProcessesAPI extends RESTDataSource {
+export class FiltersAPI extends RESTDataSource {
     constructor() {
         super();
         this.baseURL = 'http://192.168.102.43:8081/orch/rest/';
     }
 
-    async getProcesses(): Promise<Processes.Get> {
+    async getProcesses(): Promise<Filters.Processes> {
         return this.get('processes');
     }
 
-    async getProcessErrors(): Promise<Processes.Errors> {
+    async getErrors(): Promise<Filters.Errors> {
         return this.get('errors');
     }
 
-    async getProcessStatuses(): Promise<Processes.Statuses> {
+    async getStatuses(): Promise<Filters.Statuses> {
         return this.get('statuses');
     }
 }

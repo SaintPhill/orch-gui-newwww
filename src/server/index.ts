@@ -1,12 +1,12 @@
 import { ApolloServer } from 'apollo-server';
 
 import { schema } from './schemas';
-import { ProcessesAPI } from './datasources/ProcessesAPI';
+import { FiltersAPI } from './datasources/FiltersAPI';
 
 const server = new ApolloServer({
     schema,
     dataSources: () => ({
-        processesAPI: new ProcessesAPI(),
+        filtersAPI: new FiltersAPI(),
     }),
 });
 

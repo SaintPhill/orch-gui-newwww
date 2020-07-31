@@ -1,13 +1,14 @@
 type Query {
     processes: [Process!]
-    processErrors: [ProcessError!]
-    processStatuses: [String!]
+    errors: [Error!]
+    statuses: [String!]
 }
 
 type Process {
     id: Int!
     alias: String!
     name: String!
+    param_names: [String!]
     steps: [ProcessStep!]
 }
 
@@ -18,7 +19,7 @@ type ProcessStep {
     stepIndex: Int!
 }
 
-type ProcessError {
+type Error {
     id: Int!
     name: String!
     status: String!
