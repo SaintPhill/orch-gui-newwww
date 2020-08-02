@@ -16,7 +16,7 @@ export function AppTemplate(): JSX.Element {
             {isLogin
                 ? <Layout />
                 : <Authorization
-                    loginHandler={login}
+                    successfulLogin={login}
                 />
             }
         </div>

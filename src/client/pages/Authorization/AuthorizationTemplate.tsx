@@ -8,25 +8,39 @@ import classNames from 'classnames';
 import './Authorization.scss';
 
 interface Props {
-    ROOT_CLASS: string
-    error: Record<string, any>
-    user: Record<string, any>
-    onChangeUser(event: React.ChangeEvent<HTMLInputElement>): void
-    login(event: React.MouseEvent): void
+    userLogin: string
+    userPassword: string
+    errorText: string
+    errorLogin: boolean
+    errorPassword: boolean
+    handleChangeUserLogin(event: React.ChangeEvent<HTMLInputElement>): void
+    handleChangeUserPassword(event: React.ChangeEvent<HTMLInputElement>): void
+    onToggleLoginButton(event: React.MouseEvent): void
 }
 
-export default function AuthorizationTemplate({ ROOT_CLASS, error, onChangeUser, user, login }: Props): JSX.Element {
+export default function AuthorizationTemplate({
+    userLogin,
+    userPassword,
+    errorText,
+    errorLogin,
+    errorPassword,
+    handleChangeUserLogin,
+    handleChangeUserPassword,
+    onToggleLoginButton }: Props): JSX.Element {
+
+    const ROOT_CLASS = 'authorization';
+
     const inputClassLogin = classNames(
         `${ROOT_CLASS}-form__input`,
         {
-            'form__error': error.login,
+            'form__error': errorLogin,
         }
     );
 
     const inputClassPassword = classNames(
         `${ROOT_CLASS}-form__input`,
         {
-            'form__error': error.password,
+            'form__error': errorPassword,
         }
     );
 
@@ -52,8 +66,8 @@ export default function AuthorizationTemplate({ ROOT_CLASS, error, onChangeUser,
                         type="text"
                         className={inputClassLogin}
                         name="login"
-                        onChange={onChangeUser}
-                        value={user.login}
+                        onChange={handleChangeUserLogin}
+                        value={userLogin}
                     />
                 </div>
                 <div className={`${ROOT_CLASS}-form__item`}>
@@ -62,14 +76,14 @@ export default function AuthorizationTemplate({ ROOT_CLASS, error, onChangeUser,
                         type="password"
                         className={inputClassPassword}
                         name="password"
-                        onChange={onChangeUser}
-                        value={user.password}
+                        onChange={handleChangeUserPassword}
+                        value={userPassword}
                     />
                     <div className={`${ROOT_CLASS}-form__error`}>
-                        {error.errorText}
+                        {errorText}
                     </div>
                 </div>
-                <Button isPrimary onClick={login}>Вход</Button>
+                <Button isPrimary onClick={onToggleLoginButton}>Вход</Button>
             </form>
         </div>
     );

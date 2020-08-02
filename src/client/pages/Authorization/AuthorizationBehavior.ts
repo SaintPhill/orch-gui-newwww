@@ -2,66 +2,70 @@ import React, { useState } from 'react';
 import AuthorizationTemplate from './AuthorizationTemplate';
 
 interface Props {
-    loginHandler(): void
+    successfulLogin(): void
 }
 
-export function AuthorizationBehavior({ loginHandler }: Props): JSX.Element {
-    const [user, setUser] = useState({
-        login: '',
-        password: '',
-    });
+export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
+    const [userLogin, setUserLogin] = useState('');
+    const [userPassword, setUserPassword] = useState('');
 
-    const [error, setError] = useState({
-        errorText: '',
-        login: false,
-        password: false,
-    });
+    const [errorText, setErrorText] = useState('');
+    const [errorLogin, setErrorLogin] = useState(false);
+    const [errorPassword, setErrorPassword] = useState(false);
 
-    function login(event: React.MouseEvent): void {
-        event.preventDefault();
+    function validateLoginInformation() {
+        if (!userLogin && !userPassword
+            || userLogin && userLogin !== 'admin' && !userPassword
+            || userPassword === 'password' && !userLogin
+            || userPassword === 'password' && userLogin !== 'admin'
+            || userPassword !== 'password' && !userLogin
+            || userPassword !== 'password' && userLogin !== 'admin') {
 
-        if (!user.login && !user.password
-            || user.login && user.login !== 'admin' && !user.password
-            || user.password === 'password' && !user.login
-            || user.password === 'password' && user.login !== 'admin'
-            || user.password !== 'password' && !user.login
-            || user.password !== 'password' && user.login !== 'admin') {
-            setError({
-                errorText: 'Неверное имя пользователя или пароль',
-                login: true,
-                password: true,
-            });
-        } else if (user.login === 'admin' && !user.password
-            || user.login === 'admin' && user.password !== 'password') {
-            setError({
-                errorText: 'Пароль не соответствует требованиям',
-                login: false,
-                password: true,
-            });
+            setErrorText('Неверное имя пользователя или пароль');
+            setErrorLogin(true);
+            setErrorPassword(true);
+
+        } else if (userLogin === 'admin' && !userPassword
+            || userLogin === 'admin' && userPassword !== 'password') {
+
+            setErrorText('Пароль не соответствует требованиям');
+            setErrorLogin(false);
+            setErrorPassword(true);
+
         } else {
-            setError({
-                errorText: '',
-                login: false,
-                password: false,
-            });
-            loginHandler();
+            setErrorText('');
+            setErrorLogin(false);
+            setErrorPassword(false);
+
+            return true;
+        }
+
+        return false;
+    }
+
+    function onToggleLoginButton(event: React.MouseEvent): void {
+        event.preventDefault();
+        if (validateLoginInformation()) {
+            successfulLogin();
         }
     }
 
-    function onChangeUser(event: React.ChangeEvent<HTMLInputElement>): void {
-        setUser({
-            ...user,
-            [event.target.name]: event.target.value,
-        });
+    function handleChangeUserLogin(event: React.ChangeEvent<HTMLInputElement>): void {
+        setUserLogin(event.target.value);
     }
 
-    const ROOT_CLASS = 'authorization';
+    function handleChangeUserPassword(event: React.ChangeEvent<HTMLInputElement>): void {
+        setUserPassword(event.target.value);
+    }
 
     return React.createElement(AuthorizationTemplate, {
-        ROOT_CLASS,
-        error,
-        onChangeUser,
-        user,
-        login,
+        userLogin,
+        userPassword,
+        errorText,
+        errorLogin,
+        errorPassword,
+        handleChangeUserLogin,
+        handleChangeUserPassword,
+        onToggleLoginButton,
     });
 }
