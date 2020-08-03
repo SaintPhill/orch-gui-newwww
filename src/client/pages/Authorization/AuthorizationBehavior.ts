@@ -13,20 +13,23 @@ export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
     const [loginError, setLoginError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
 
+    const USER_LOGIN = 'amdin';
+    const USER_PASSWORD = 'password';
+
     function validateLoginInformation() {
         if (!userLogin && !userPassword
-            || userLogin && userLogin !== 'admin' && !userPassword
-            || userPassword === 'password' && !userLogin
-            || userPassword === 'password' && userLogin !== 'admin'
-            || userPassword !== 'password' && !userLogin
-            || userPassword !== 'password' && userLogin !== 'admin') {
+            || userLogin && userLogin !== USER_LOGIN && !userPassword
+            || userPassword === USER_PASSWORD && !userLogin
+            || userPassword === USER_PASSWORD && userLogin !== USER_LOGIN
+            || userPassword !== USER_PASSWORD && !userLogin
+            || userPassword !== USER_PASSWORD && userLogin !== USER_LOGIN) {
 
             setErrorMessage('Неверное имя пользователя или пароль');
             setLoginError(true);
             setPasswordError(true);
 
-        } else if (userLogin === 'admin' && !userPassword
-            || userLogin === 'admin' && userPassword !== 'password') {
+        } else if (userLogin === USER_LOGIN && !userPassword
+            || userLogin === USER_LOGIN && userPassword !== USER_PASSWORD) {
 
             setErrorMessage('Пароль не соответствует требованиям');
             setLoginError(false);
