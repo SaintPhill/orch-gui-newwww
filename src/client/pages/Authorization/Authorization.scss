@@ -5,7 +5,7 @@
 }
 
 .authorization__logo {
-    max-height: 44px;
+    height: 44px;
     width: 150px;
     margin-left: 70px;
     margin-right: 70px;
@@ -13,7 +13,7 @@
 
 .authorization__title {
     margin: 95px auto 150px auto;
-    max-width: 770px;
+    width: 770px;
     text-align: center;
     font-weight: normal;
     font-size: 36px;
@@ -56,10 +56,10 @@
     height: 34px;
 }
 
-.authorization-form__error {
+.authorization-form__message_error {
    color: red;
 }
 
-.form__error {
+.authorization-form__input_error {
     border: 1px solid red
 }
