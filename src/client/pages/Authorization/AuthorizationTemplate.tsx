@@ -10,20 +10,19 @@ import './Authorization.scss';
 interface Props {
     userLogin: string
     userPassword: string
-    errorText: string
-    errorLogin: boolean
-    errorPassword: boolean
+    errorMessage: string
+    loginError: boolean
+    passwordError: boolean
     handleChangeUserLogin(event: React.ChangeEvent<HTMLInputElement>): void
     handleChangeUserPassword(event: React.ChangeEvent<HTMLInputElement>): void
     onToggleLoginButton(event: React.MouseEvent): void
 }
 
-export default function AuthorizationTemplate({
-    userLogin,
+export default function AuthorizationTemplate({ userLogin,
     userPassword,
-    errorText,
-    errorLogin,
-    errorPassword,
+    errorMessage,
+    loginError,
+    passwordError,
     handleChangeUserLogin,
     handleChangeUserPassword,
     onToggleLoginButton }: Props): JSX.Element {
@@ -33,14 +32,14 @@ export default function AuthorizationTemplate({
     const inputClassLogin = classNames(
         `${ROOT_CLASS}-form__input`,
         {
-            'form__error': errorLogin,
+            [`${ROOT_CLASS}-form__input_error`]: loginError,
         }
     );
 
     const inputClassPassword = classNames(
         `${ROOT_CLASS}-form__input`,
         {
-            'form__error': errorPassword,
+            [`${ROOT_CLASS}-form__input_error`]: passwordError,
         }
     );
 
@@ -79,8 +78,8 @@ export default function AuthorizationTemplate({
                         onChange={handleChangeUserPassword}
                         value={userPassword}
                     />
-                    <div className={`${ROOT_CLASS}-form__error`}>
-                        {errorText}
+                    <div className={`${ROOT_CLASS}-form__message_error`}>
+                        {errorMessage}
                     </div>
                 </div>
                 <Button isPrimary onClick={onToggleLoginButton}>Вход</Button>

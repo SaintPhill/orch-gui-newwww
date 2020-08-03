@@ -9,9 +9,9 @@ export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
     const [userLogin, setUserLogin] = useState('');
     const [userPassword, setUserPassword] = useState('');
 
-    const [errorText, setErrorText] = useState('');
-    const [errorLogin, setErrorLogin] = useState(false);
-    const [errorPassword, setErrorPassword] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    const [loginError, setLoginError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
 
     function validateLoginInformation() {
         if (!userLogin && !userPassword
@@ -21,21 +21,21 @@ export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
             || userPassword !== 'password' && !userLogin
             || userPassword !== 'password' && userLogin !== 'admin') {
 
-            setErrorText('Неверное имя пользователя или пароль');
-            setErrorLogin(true);
-            setErrorPassword(true);
+            setErrorMessage('Неверное имя пользователя или пароль');
+            setLoginError(true);
+            setPasswordError(true);
 
         } else if (userLogin === 'admin' && !userPassword
             || userLogin === 'admin' && userPassword !== 'password') {
 
-            setErrorText('Пароль не соответствует требованиям');
-            setErrorLogin(false);
-            setErrorPassword(true);
+            setErrorMessage('Пароль не соответствует требованиям');
+            setLoginError(false);
+            setPasswordError(true);
 
         } else {
-            setErrorText('');
-            setErrorLogin(false);
-            setErrorPassword(false);
+            setErrorMessage('');
+            setLoginError(false);
+            setPasswordError(false);
 
             return true;
         }
@@ -61,9 +61,9 @@ export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
     return React.createElement(AuthorizationTemplate, {
         userLogin,
         userPassword,
-        errorText,
-        errorLogin,
-        errorPassword,
+        errorMessage,
+        loginError,
+        passwordError,
         handleChangeUserLogin,
         handleChangeUserPassword,
         onToggleLoginButton,
