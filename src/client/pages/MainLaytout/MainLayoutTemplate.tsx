@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header } from '../../components/Header';
-import { Button } from '../../UI/button';
+import { Button } from '../../UI/Button';
 import { Filters } from '../../components/Filters';
 import { Detalization } from '../../components/Detalization';
 import { FiltrationResult } from '../../components/FiltrationResult';

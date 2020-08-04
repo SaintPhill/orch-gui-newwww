@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './button.scss';
-import { SvgIcon } from '../../components/SvgIcon';
+import { SvgIcon } from '../SvgIcon';
+import './Button.scss';
 
 interface Props {
     svgId?: string
@@ -28,8 +28,8 @@ export function ButtonTemplate({
     const btnClass = classNames(
         ROOT_CLASS,
         {
-            [`${ROOT_CLASS}_theme_${theme}-primary`]: isPrimary,
             [`${ROOT_CLASS}_theme_${theme}`]: !!theme,
+            [`${ROOT_CLASS}_theme_${theme}-primary`]: !!theme && isPrimary,
             [String(className)]: !!className,
         }
     );

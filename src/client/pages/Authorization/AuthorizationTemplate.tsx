@@ -1,126 +1,80 @@
- import React, { useState } from 'react'
+import React from 'react';
+import classNames from 'classnames';
 
-import './Authorization.scss'
-import { Button } from '../../UI/button'
-import { SvgIcon } from '../../components/SvgIcon'
+import { Button } from '../../UI/Button';
+import { SvgIcon } from '../../UI/SvgIcon';
+import './Authorization.scss';
 
-export function AuthorizationTemplate(props: any) {
-    const [user, setUser] = useState({
-        login: '',
-        password: ''
-    })
+interface Props {
+    userLogin: string
+    userPassword: string
+    errorMessage: string
+    loginError: boolean
+    passwordError: boolean
+    handleChangeUserLogin(event: React.ChangeEvent<HTMLInputElement>): void
+    handleChangeUserPassword(event: React.ChangeEvent<HTMLInputElement>): void
+    onToggleLoginButton(event: React.MouseEvent): void
+}
 
-    const [error, setError] = useState({
-        errorText: '',
-        login: false,
-        password: false,
-    })
-
-    const login = (e: any) => {
-        e.preventDefault()
-
-        if (!user.login && !user.password) {
-            setError({
-                ...error,
-                errorText: 'Неверное имя пользователя или пароль',
-                login: true,
-                password: true,
-            })
+export default function AuthorizationTemplate({
+    userLogin,
+    userPassword,
+    errorMessage,
+    loginError,
+    passwordError,
+    handleChangeUserLogin,
+    handleChangeUserPassword,
+    onToggleLoginButton,
+}: Props): JSX.Element {
+    const ROOT_CLASS = 'authorization';
+    const inputClassLogin = classNames(
+        `${ROOT_CLASS}-form__input`,
+        {
+            [`${ROOT_CLASS}-form__input_error`]: loginError,
         }
-
-        if (user.login && user.login !== 'admin' && !user.password) {
-            setError({
-                ...error,
-                errorText: 'Неверное имя пользователя или пароль',
-                login: true,
-                password: true,
-            })
+    );
+    const inputClassPassword = classNames(
+        `${ROOT_CLASS}-form__input`,
+        {
+            [`${ROOT_CLASS}-form__input_error`]: passwordError,
         }
+    );
 
-        if (user.login === 'admin' && !user.password) {
-            setError({
-                ...error,
-                errorText: 'Пароль не соответствует требованиям',
-                login: false,
-                password: true,
-            })
-        }
-
-        if (user.login === 'admin' && user.password !== 'password') {
-            setError({
-                ...error,
-                errorText: 'Пароль не соответствует требованиям',
-                login: false,
-                password: true,
-            })
-        }
-
-        if (user.login === 'admin' && user.password === 'password') {
-            setError({
-                ...error,
-                errorText: '',
-                login: false,
-                password: false,
-            })
-
-            props.login()
-        }
-    }
-
-    const onChangeUser = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value
-        })
-    }
-
-    const ROOT_CLASS = 'authorization'
-    
     return (
         <div className={ROOT_CLASS}>
             <header className={`${ROOT_CLASS}__header`}>
-                <SvgIcon
-                    spriteId='tricolor'
-                    className={`${ROOT_CLASS}__logo`}
-                />
-                <SvgIcon
-                    spriteId='iflex'
-                    className={`${ROOT_CLASS}__logo`}
-                />
+                <SvgIcon spriteId="tricolor" className={`${ROOT_CLASS}__logo`} />
+                <SvgIcon spriteId="iflex" className={`${ROOT_CLASS}__logo`} />
             </header>
             <h1 className={`${ROOT_CLASS}__title`}>
                 Вход в систему управления оркестрационными процессами
             </h1>
-            <form className={`${ROOT_CLASS}-form`} onSubmit={(e) => login(e)}>
+            <form className={`${ROOT_CLASS}-form`}>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пользователь</label>
-                    <input 
-                        type="text" 
-                        className={`${ROOT_CLASS}-form__input ${error.login ? 'form__error' : null}`}
-                        name='login'
-                        onChange={onChangeUser}
-                        value={user.login}
+                    <input
+                        type="text"
+                        className={inputClassLogin}
+                        name="login"
+                        onChange={handleChangeUserLogin}
+                        value={userLogin}
                     />
                 </div>
                 <div className={`${ROOT_CLASS}-form__item`}>
                     <label className={`${ROOT_CLASS}-form__label`}>Пароль</label>
-                    <input 
-                        type="password" 
-                        className={`${ROOT_CLASS}-form__input ${error.password ? 'form__error' : null}`}
-                        name='password'
-                        onChange={onChangeUser}
-                        value={user.password}
+                    <input
+                        type="password"
+                        className={inputClassPassword}
+                        name="password"
+                        onChange={handleChangeUserPassword}
+                        value={userPassword}
                     />
-                    <div className={`${ROOT_CLASS}-form__error`}>
-                        {error.errorText}
+                    <div className={`${ROOT_CLASS}-form__message_error`}>
+                        {errorMessage}
                     </div>
                 </div>
-                <Button
-                    isPrimary={true}
-                >
-                    Вход
-                </Button>
+                <Button isPrimary onClick={onToggleLoginButton}>Вход</Button>
             </form>
         </div>
-    )
+    );
 }
