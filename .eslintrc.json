@@ -32,7 +32,7 @@
     "no-alert": "warn",
     "no-console": "warn",
     "no-else-return": ["error", { "allowElseIf": false }],
-    "no-implicit-coercion": "error",
+    "no-implicit-coercion": [2, { "allow": ["!!", "~"] } ],
     "no-labels": "error",
     "no-lone-blocks": "error",
     "no-multi-spaces": "error",
