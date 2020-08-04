@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import { Authorization } from '../../pages/Authorization';
-import Layout from '../Layout';
+import { MainLayout } from '../../pages/MainLaytout';
 
 export function AppTemplate(): JSX.Element {
     const [isLogin, setIsLogin] = useState(false);
@@ -14,7 +14,7 @@ export function AppTemplate(): JSX.Element {
     return (
         <div className="App">
             {isLogin
-                ? <Layout />
+                ? <MainLayout />
                 : <Authorization
                     successfulLogin={login}
                 />

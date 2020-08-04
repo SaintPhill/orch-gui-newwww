@@ -1,10 +1,8 @@
 import React from 'react';
-
-import { Button } from '../../UI/button';
-import { SvgIcon } from '../../UI/SvgIcon';
-
 import classNames from 'classnames';
 
+import { Button } from '../../UI/Button';
+import { SvgIcon } from '../../UI/SvgIcon';
 import './Authorization.scss';
 
 interface Props {
@@ -18,24 +16,23 @@ interface Props {
     onToggleLoginButton(event: React.MouseEvent): void
 }
 
-export default function AuthorizationTemplate({ userLogin,
+export default function AuthorizationTemplate({
+    userLogin,
     userPassword,
     errorMessage,
     loginError,
     passwordError,
     handleChangeUserLogin,
     handleChangeUserPassword,
-    onToggleLoginButton }: Props): JSX.Element {
-
+    onToggleLoginButton,
+}: Props): JSX.Element {
     const ROOT_CLASS = 'authorization';
-
     const inputClassLogin = classNames(
         `${ROOT_CLASS}-form__input`,
         {
             [`${ROOT_CLASS}-form__input_error`]: loginError,
         }
     );
-
     const inputClassPassword = classNames(
         `${ROOT_CLASS}-form__input`,
         {
@@ -46,14 +43,8 @@ export default function AuthorizationTemplate({ userLogin,
     return (
         <div className={ROOT_CLASS}>
             <header className={`${ROOT_CLASS}__header`}>
-                <SvgIcon
-                    spriteId="tricolor"
-                    className={`${ROOT_CLASS}__logo`}
-                />
-                <SvgIcon
-                    spriteId="iflex"
-                    className={`${ROOT_CLASS}__logo`}
-                />
+                <SvgIcon spriteId="tricolor" className={`${ROOT_CLASS}__logo`} />
+                <SvgIcon spriteId="iflex" className={`${ROOT_CLASS}__logo`} />
             </header>
             <h1 className={`${ROOT_CLASS}__title`}>
                 Вход в систему управления оркестрационными процессами
