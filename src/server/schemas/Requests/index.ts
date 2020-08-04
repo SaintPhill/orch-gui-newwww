@@ -6,4 +6,4 @@ import { resolvers } from './resolvers';
 
 const typeDefs = readFileSync(join(__dirname, 'typeDefs.graphql'), { encoding: 'utf-8' });
 
-export const CarsSchema = makeExecutableSchema({ typeDefs, resolvers });
+export const RequestsSchema = makeExecutableSchema({ typeDefs, resolvers });
