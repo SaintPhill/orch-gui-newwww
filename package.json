@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "3.1.2",
     "@types/classnames": "2.2.10",
     "@types/node": "12.12.50",
     "@types/react": "16.9.43",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "orch-backend-types": "git+ssh://git@gitlab.iflex.ru/105055/orch-backend-types.git",
     "@types/graphql": "14.5.0",
     "@typescript-eslint/parser": "3.6.1",
     "apollo": "2.30.1",

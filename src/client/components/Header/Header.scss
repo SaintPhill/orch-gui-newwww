@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  max-height: 55px;
+}
+
+.header__icon {
+  padding-top: 15px;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #D8DDE6;
+}
+
+.header__buttons-wrapper {
+  display: flex;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 55px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__button_active {
+  border-bottom: 3px solid #3A7CFF;
+  background-color: #EBF2FF;
+}
+
+.header__login-information {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-name {
+  width: 270px;
+  height: 20px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__logout-button {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #AFB5C1;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__logout-button-icon {
+  width: 16px;
+  height: 17px;
+  margin-left: 10px;
+}
