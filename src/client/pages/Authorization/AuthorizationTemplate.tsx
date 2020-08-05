@@ -13,7 +13,7 @@ interface Props {
     passwordError: boolean
     handleChangeUserLogin(event: React.ChangeEvent<HTMLInputElement>): void
     handleChangeUserPassword(event: React.ChangeEvent<HTMLInputElement>): void
-    onToggleLoginButton(event: React.MouseEvent): void
+    onToggleLoginButton(): void
 }
 
 export default function AuthorizationTemplate({

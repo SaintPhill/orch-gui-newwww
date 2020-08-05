@@ -8,6 +8,7 @@ type Query {
         reverse_order: Boolean
         limit: Int
     ): [Request]
+    requestById(id: Int!): RequestById
 }
 
 input Step {
@@ -36,4 +37,34 @@ type Request {
     error_description: String
     step_error: Int
     step_alias: String
+}
+
+type RequestById {
+    id: Int!
+    system_alias: String!
+    external_id: String!
+    register_date: Float!
+    status: String!
+    process_alias: String!
+    executions: [Executions]
+    parameters: [Parameters]
+}
+
+type Executions{
+    id: Int
+    execution_date: Float
+    step_alias: String
+    step_name: String
+    duration: Int
+    status: String
+    error_code: Int
+    error_description: String
+    children: [RequestById]
+}
+
+type Parameters{
+    id: Int
+    name: String
+    type: String
+    value: String
 }

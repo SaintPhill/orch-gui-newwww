@@ -2,6 +2,7 @@ import { toApolloError } from 'apollo-server-core';
 import { Request } from 'orch-backend-types';
 
 type RequestsType = Request.List[];
+type RequestByIdType = Request.Get;
 
 export interface RequestsParams {
     process?: string
@@ -44,6 +45,21 @@ export const resolvers = {
             }
 
             return requests;
+        },
+
+        async requestById(
+            _: undefined,
+            params: { id: number },
+            { dataSources: { requestsAPI } }: any
+        ) {
+            let request: RequestByIdType;
+            try {
+                request = await requestsAPI.findRequestById(params.id);
+            } catch (error) {
+                throw toApolloError(error, error.code);
+            }
+
+            return request;
         },
     },
 };

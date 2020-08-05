@@ -5,7 +5,7 @@ import { Authorization } from '../../pages/Authorization';
 import { MainLayout } from '../../pages/MainLaytout';
 
 export function AppTemplate(): JSX.Element {
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
     function login(): void{
         setIsLogin(true);

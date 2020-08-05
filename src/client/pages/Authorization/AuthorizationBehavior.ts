@@ -47,8 +47,7 @@ export function AuthorizationBehavior({ successfulLogin }: Props): JSX.Element {
         return false;
     }
 
-    function onToggleLoginButton(event: React.MouseEvent): void {
-        event.preventDefault();
+    function onToggleLoginButton(): void {
         if (validateLoginInformation()) {
             successfulLogin();
         }
