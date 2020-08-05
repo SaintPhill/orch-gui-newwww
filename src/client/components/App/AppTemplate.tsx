@@ -1,21 +1,22 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 
-import { Authorization } from '../pages/Authorization';
-import { MainLayout } from '../pages/MainLaytout';
+import { Authorization } from '../../pages/Authorization';
+import { MainLayout } from '../../pages/MainLaytout';
 
-export default function App(): JSX.Element {
+export function AppTemplate(): JSX.Element {
     const [isLogin, setIsLogin] = useState(true);
 
-    const login = () => {
+    function login(): void{
         setIsLogin(true);
-    };
+    }
 
     return (
         <div className="App">
             {isLogin
                 ? <MainLayout />
                 : <Authorization
-                    login={login}
+                    successfulLogin={login}
                 />
             }
         </div>
