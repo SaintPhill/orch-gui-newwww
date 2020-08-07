@@ -8,7 +8,11 @@ interface Props {
     onToggleFilters(): void
 }
 
-export function FiltersBehavior({ isFiltersOpen, onToggleFilters }: Props): JSX.Element {
+export function FiltersBehavior({
+    isFiltersOpen,
+    onToggleFilters,
+}: Props): JSX.Element {
+
     return React.createElement(FiltersTemplate, {
         isFiltersOpen,
         onToggleFilters,

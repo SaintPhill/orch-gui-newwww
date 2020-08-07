@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import sprite from '../../images/logos/sprite.svg';
+import sprite from '../../images/sprite.svg';
 import './SvgIcon.scss';
 
 interface Props {

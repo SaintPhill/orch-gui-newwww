@@ -21,7 +21,6 @@
   "rules": {
     "react/prop-types": 0,
     "no-loops/no-loops": 2,
-    "no-shadow": ["error", { "builtinGlobals": false }],
     "jsx-quotes": ["error", "prefer-double"],
     "no-duplicate-imports": ["error", { "includeExports": true }],
     "no-template-curly-in-string": "error",
@@ -133,7 +132,6 @@
 
     "react/no-access-state-in-setstate": "error",
     "react/no-danger": "error",
-    "react/no-multi-comp": "error",
     "react/no-this-in-sfc": "error",
     "react/prefer-stateless-function": "error",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],

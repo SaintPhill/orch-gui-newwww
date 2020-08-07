@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { Button } from '../../UI/Button';
+import { FiltersList } from './FiltersList';
 import './Filters.scss';
 
 interface Props {
@@ -31,6 +32,7 @@ export function FiltersTemplate({
                     svgId={'arrow-left'}
                 />
             </div>
+            <FiltersList />
         </div>
     );
 }
