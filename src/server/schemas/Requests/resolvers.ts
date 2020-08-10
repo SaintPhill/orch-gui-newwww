@@ -5,9 +5,9 @@ type RequestsType = Request.List[];
 type RequestByIdType = Request.Get;
 
 export interface RequestsParams {
-    process?: string
-    status?: string
-    step?: Step
+    process: string | null
+    status: string | null
+    step: Step
     period?: Period
     parameter?: Parameter
     reverse_order?: boolean
@@ -15,9 +15,8 @@ export interface RequestsParams {
 }
 
 interface Step {
-    alias?: string
-    error_code?: number
-    status?: string
+    alias: string | null
+    status: string | null
 }
 
 interface Period {

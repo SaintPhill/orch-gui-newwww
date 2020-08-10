@@ -1,21 +1,22 @@
 import React from 'react';
 
 import { FilterName, FiltersItem, SelectOption } from '../FilterItem/FiltersItem';
-import './FiltersList.scss';
-
-const values = [
-    { value: 'Обмен оборудования', label: 'Обмен оборудования' },
-    { value: 'Расторжение абонентского договора', label: 'Расторжение абонентского договора' },
-    { value: 'Закрепление абонента', label: 'Закрепление абонента' },
-];
 
 interface Props {
     process: SelectOption | null
+    processStatus: SelectOption | null
+    processSelectValues?: SelectOption[]
+    processStatusSelectValues?: SelectOption[]
     setProcess(value: string): void
+    setProcessStatus(value: string): void
 }
 
 export function FiltersListTemplate({
     process,
+    processStatus,
+    processSelectValues,
+    processStatusSelectValues,
+    setProcessStatus,
     setProcess,
 }: Props): JSX.Element {
     const ROOT_CLASS = 'filters-list';
@@ -26,8 +27,17 @@ export function FiltersListTemplate({
                 name={FilterName.process}
                 value={process}
                 setValue={setProcess}
-                selectOptions={values}
                 isSearchable={true}
+                selectOptions={processSelectValues}
+            />
+
+            <FiltersItem
+                name={FilterName.processStatus}
+                value={processStatus}
+                setValue={setProcessStatus}
+                isSearchable={true}
+                isMulti={true}
+                selectOptions={processStatusSelectValues}
             />
         </div>
     );

@@ -19,7 +19,7 @@
 
 .Select-container {
 	width: 100%;
-	margin-top: 10px;
+	margin: 10px 0 20px 0;
 	border-top: none;
 
 	.Select__dropdown-indicator {
@@ -65,7 +65,7 @@
 		font-family: 'Roboto', sans-serif;
 		font-size: 15px;
 		line-height: 18px;
-		text-overflow: clip;
+		text-overflow: ellipsis;
 	}
 
 	.Select__option {
@@ -115,8 +115,6 @@
 	}
 
 	.Select__menu-list {
-		overflow: hidden;
-		max-height: 215px;
 		padding: 0;
 	}
 

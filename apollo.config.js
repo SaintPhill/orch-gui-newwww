@@ -5,7 +5,7 @@ module.exports = {
             url: `http://localhost:4000/graphql`,
         },
         includes: [
-            './src/**/*.tsx',
+            './src/**/*.ts',
         ],
     },
 };

@@ -2,18 +2,18 @@
 	width: auto;
 	margin-top: 10px;
 	border-top: none;
-	border-radius: 10px;
 
 	.Multi-select__control {
 		padding: 0;
+		border-radius: 0;
 		height: 45px;
-		border-radius: 10px;
 		background-color: #ffffff;
 		box-shadow: none;
 		transition: none;
+		border-color: #D8E3FA;
 
 		&:hover {
-			border-color: #dadada;
+			border-color: #c7d8fb;
 		}
 	}
 
@@ -62,11 +62,10 @@
 	}
 
 	.Multi-select__control--is-focused {
-		border-color: #47b3ac;
-		transition: none;
+		border-color: #c7d8fb;
 
 		&:hover {
-			border-color: #47b3ac;
+			border-color: #c7d8fb;
 		}
 	}
 
@@ -83,23 +82,18 @@
 	}
 
 	.Multi-select__option {
-		position: relative;
 		color: #212121;
-		font-size: 16px;
-		font-weight: 600;
-		font-style: normal;
-		padding-left: 20px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		font-weight: normal;
+		padding-left: 15px;
 
-		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			right: 20px;
-			top: 17%;
-			width: 21px;
-			height: 21px;
-			border-radius: 30px;
-			border: 1px solid #dadada;
+		&:active {
+			background-color: #DEEBFF;
+		}
+
+		&:hover {
+			background-color: #DEEBFF;
 		}
 	}
 
@@ -139,7 +133,7 @@
 		position: absolute;
 		top: 29px;
 		z-index: 10;
-		border: solid 1px #47b3ac;
+		border: solid 1px #D8E3FA;
 		border-top: none;
 		box-shadow: none;
 		border-radius: 0;

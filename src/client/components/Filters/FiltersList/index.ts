@@ -1,1 +1,1 @@
-export { FiltersListBehavior as FiltersList } from './FiltersListBehavior';
+export { FiltersListConnect as FiltersList } from './FiltersListConnect';

@@ -11,7 +11,8 @@ export interface SelectOption {
 }
 
 export enum FilterName {
-    process = 'Процесс'
+    process = 'Процесс',
+    processStatus = 'Статус процесса'
 }
 
 interface Props {
