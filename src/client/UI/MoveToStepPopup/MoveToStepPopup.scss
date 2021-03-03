@@ -1,0 +1,37 @@
+.move-to-step-popup {
+  width: 855px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.move-to-step-popup__table-wrapper {
+  display: flex;
+  margin: 30px auto 0 auto;
+  width: 800px;
+  height: 320px;
+  overflow-x: hidden;
+}
+
+.move-to-step-popup__spinner {
+  margin: 0 auto !important;
+  align-self: center;
+}
+
+.move-to-step-popup__title {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.move-to-step-popup__dividing-line {
+  width: 100%;
+  border: 1px solid #DEE4F0;
+  margin-top: 20px;
+}
+
+.move-to-step-popup__confirm-button {
+  width: 145px;
+  align-self: center;
+  margin-top: 20px;
+}

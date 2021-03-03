@@ -2,13 +2,15 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { InputBehaviourProps } from './InputBehavior';
+import { SvgIcon } from '../SvgIcon';
+import { SpriteId } from '../SvgIcon/SvgIconTemplate';
 
 interface Props extends InputBehaviourProps {
     inputRef: React.RefObject<HTMLInputElement>
+    onDeleteSvgClick?(): void
 }
 
 export function InputTemplate({
-    name,
     type,
     label,
     value,
@@ -17,25 +19,41 @@ export function InputTemplate({
     inputRef,
     onChange,
     placeHolder,
-    modifier,
     onBlur,
+    deleteSvgId,
+    onClearSvgClick,
+    onDeleteSvgClick,
 }: Props): JSX.Element {
     const inputClassName = classnames(
-        `${blockClass}__item-input`,
+        `${blockClass}__input-field`,
         {
             [`${blockClass}__item-input_error`]: errorMessage,
-            [`${blockClass}__item-input_${modifier}`]: modifier,
         },
     );
 
     return (
-        <label className={`${blockClass}__item-block`}>
-            <span className={`${blockClass}__item-label`}>{label}</span>
+        <label className={`${blockClass}__input-block`}>
+            {onClearSvgClick &&
+                <SvgIcon
+                    onClick={onClearSvgClick}
+                    spriteId={value ? SpriteId.clearIndicator : SpriteId.empty}
+                    className={`${blockClass}__input-clear-svg`}
+                />
+            }
+            <span className={`${blockClass}__input-label`}>
+                {label}
+                {deleteSvgId &&
+                    <SvgIcon
+                        onClick={onDeleteSvgClick}
+                        spriteId={deleteSvgId}
+                        className={`${blockClass}__input-delete-svg`}
+                    />
+                }
+            </span>
             <input
                 onBlur={onBlur}
                 className={inputClassName}
                 type={type}
-                name={name}
                 value={value}
                 onChange={onChange}
                 ref={inputRef}

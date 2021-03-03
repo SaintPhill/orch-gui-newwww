@@ -1,0 +1,16 @@
+.operation-detalization-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.operation-detalization-table__row {
+  height: 30px;
+  cursor: pointer;
+}
+
+.operation-detalization-table__loading-spinner {
+  position: absolute;
+  left: 50%;
+  margin-top: 100px;
+}

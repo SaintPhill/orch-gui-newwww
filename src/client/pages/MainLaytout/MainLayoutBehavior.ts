@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { MainLayoutTemplate } from './MainLayoutTemplate';
+import { toggleFiltersVisibility } from '../../../store/StoreSlices/visibility';
+import { RootState } from '../../../store/StoreSlices';
 
 export function MainLayoutBehavior(): JSX.Element {
-    const [isFiltersOpen, toggleFilters] = useState(true);
+    const dispatch = useDispatch();
+    const mainLayoutState = useSelector((state: RootState) => state.visibility.mainLayoutState);
+    const isFiltersHidden = useSelector((state: RootState) => state.visibility.isFiltersHidden);
 
-    function onToggleFilters(): void {
-        toggleFilters(!isFiltersOpen);
+    function toggleFilters(): void {
+        dispatch(toggleFiltersVisibility());
     }
 
     return React.createElement(MainLayoutTemplate, {
-        isFiltersOpen,
-        onToggleFilters,
+        mainLayoutState,
+        isFiltersHidden,
+        toggleFilters,
     });
 }

@@ -1,10 +1,21 @@
 .header {
   display: flex;
-  max-height: 55px;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  z-index: 1;
 }
 
-.header__icon {
+.header__tricolor-icon {
   padding-top: 15px;
+}
+
+.header__button-icon {
+  width: 10px;
+  height: 16px;
+  transform: rotate(-90deg);
+  margin-left: 65px;
 }
 
 .header__wrapper {
@@ -22,17 +33,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 55px;
+  width: 255px;
+  height: 40px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+
+  &:hover {
+    color: #5E6065;
+    background: #EBF2FF;
+  }
 }
 
 .header__button_active {
-  border-bottom: 3px solid #3A7CFF;
+  border-bottom: 2px solid #3A7CFF;
   background-color: #EBF2FF;
+  color: #000000;
 }
 
 .header__login-information {
@@ -43,19 +58,14 @@
 .header__user-name {
   width: 270px;
   height: 20px;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
 }
 
 .header__logout-button {
   display: flex;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   color: #AFB5C1;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
 

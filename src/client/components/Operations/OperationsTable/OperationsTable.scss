@@ -1,0 +1,11 @@
+.operations-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.operations-table__loading-spinner {
+  position: absolute;
+  left: 50%;
+  margin-top: 100px;
+}

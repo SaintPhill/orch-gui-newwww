@@ -1,1 +1,1 @@
-export { HeaderTemplate as Header } from './HeaderTemplate';
+export { HeaderBehavior as Header } from './HeaderBehavior';

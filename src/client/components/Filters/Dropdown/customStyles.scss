@@ -1,0 +1,229 @@
+.Select__label {
+	width: 340px;
+	display: block;
+	min-width: 300px;
+	margin-top: 20px;
+}
+
+.Select__title {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+}
+
+.Select__delete-select-icon {
+	cursor: pointer;
+	width: 11px;
+	height: 11px;
+}
+
+.Select-container {
+	width: 100%;
+	margin-top: 10px;
+	border-top: none;
+
+	::-webkit-scrollbar-button:start {
+		height: 0;
+	}
+
+	.Select__dropdown-indicator {
+		padding-top: 6px;
+		padding-left: 8px;
+		cursor: pointer;
+	}
+
+	.Select__clear-indicator {
+		width: 13px;
+		height: 13px;
+		cursor: pointer;
+		fill: #D8DDE6;
+		transition: fill 0.2s ease;
+
+		&:hover {
+			fill: hsl(0,0%,60%);
+		}
+	}
+
+	.Select__value-container {
+		padding-left: 10px;
+	}
+
+	.Select__control {
+		min-height: 32px;
+		height: 32px;
+		overflow: hidden;
+		padding: 0;
+		border-radius: 0;
+		background-color: #ffffff;
+		box-shadow: none;
+		border-color: #D8E3FA;
+
+		&:hover {
+			border-color: #c7d8fb;
+		}
+	}
+
+	.Select__control--is-focused {
+		border-color: #c7d8fb;
+
+		&:hover {
+			border-color: #c7d8fb;
+		}
+	}
+
+	.Select__single-value {
+		font-size: 15px;
+		top: 45%;
+		max-width: 275px;
+		text-overflow: ellipsis;
+	}
+
+	.Select__option {
+		color: #212121;
+		font-size: 15px;
+		font-weight: normal;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		&:active {
+			background-color: #F2F7FF;
+		}
+	}
+
+	.Select__option--is-focused {
+		background-color: #F2F7FF;
+	}
+
+	.Select__option--is-selected {
+		background-color: #F2F7FF;
+		position: relative;
+	}
+
+	.Select__option--is-selected:hover {
+		color: #000000;
+	}
+
+	.Select__placeholder {
+		color: #B6BFD0;
+		font-size: 15px;
+		top: 45%;
+	}
+
+	.Select__input {
+		margin-bottom: 5px;
+	}
+
+	.Select__menu {
+		position: absolute;
+		top: 23px;
+		overflow: hidden;
+		z-index: 10;
+		border: solid 1px #c7d8fb;
+		border-top: none;
+		box-shadow: none;
+		border-radius: 0;
+		background-color: #ffffff;
+	}
+
+	.Select__menu-list {
+		padding: 0;
+		max-height: 200px;
+	}
+
+	.Select__multi-value {
+		background: none;
+	}
+
+	.Select__multi-value__label {
+		margin: 0;
+		padding: 0;
+		border: none;
+		font-size: 16px;
+		font-weight: bold;
+		color: #47b3ac;
+	}
+
+	.Select__multi-value__remove {
+		padding: 0;
+	}
+
+	.Select__menu-list::-webkit-scrollbar {
+		width: 3px;
+	}
+
+	.Select__menu-list::-webkit-scrollbar-track {
+		background: #FFFFFF;
+	}
+
+	.Select__menu-list::-webkit-scrollbar-thumb {
+		height: 40px;
+		border-radius: 3px;
+		background: #dadada;
+	}
+}
+
+.Select__save-button {
+	font-size: 15px;
+	color: #3A7CFF;
+	cursor: pointer;
+}
+
+.option-label {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-height: 768px) {
+	.Select__label {
+		width: 340px;
+
+		.Select__control {
+			min-height: 28px;
+			height: 28px;
+		}
+	}
+
+	.Select__title {
+		font-size: 14px;
+	}
+
+	.Select__save-button {
+		font-size: 14px;
+	}
+
+	.Select-container {
+		.Select__placeholder {
+			font-size: 13px;
+			top: 42%;
+		}
+
+		.Select__menu {
+			top: 20px;
+		}
+
+		.Select__menu-list {
+			max-height: 150px;
+		}
+
+		.Select__option {
+			height: 28px;
+			font-size: 13px;
+		}
+
+		.Select__single-value {
+			font-size: 13px;
+			top: 42%;
+			max-width: 280px;
+		}
+
+		.Select__clear-indicator {
+			height: 15px;
+		}
+
+		.Select__dropdown-indicator {
+			padding-top: 4px;
+		}
+	}
+}

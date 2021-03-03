@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css'; // Import Ant Design styles
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +10,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D8DDE6;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-button:start {
+    height: 30px;
+  }
 }
 
 html {
@@ -16,12 +35,31 @@ html {
 }
 
 *,*:before,*:after {
+  font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  scrollbar-width: thin;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ant-spin-dot-item {
+  background-color: #3A7CFF;
+}
+
+.ant-pagination-options {
+  display: none;
 }

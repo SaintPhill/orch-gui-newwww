@@ -1,0 +1,65 @@
+.operations {
+  position: relative;
+  height: 50%;
+}
+
+.operations_full-screen {
+  height: 100%;
+}
+
+.operations_hidden {
+  height: 40px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.operations__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.operations__title {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.operations__update-button {
+  position: absolute;
+  right: 0;
+}
+
+.operations__toggle-icon {
+  width: 15px;
+  height: 16px;
+  margin-left: 10px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.operations__toggle-icon_down {
+  transform: rotate(-90deg);
+}
+
+.operations__action-bar {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  align-items: flex-end;
+}
+
+.operations__pagination {
+  width: 430px;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid #D9D9D9;
+  background-color: #1d5d90;
+}
+
+.operations__load-xls-button {
+  position: absolute;
+  right: 0;
+  width: 180px;
+}

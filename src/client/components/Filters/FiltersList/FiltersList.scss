@@ -1,3 +1,156 @@
 .filters-list {
-  padding-right: 35px;
+  max-height: 660px;
+  height: 660px;
+  overflow: auto;
+  width: 355px;
+  padding-right: 8px;
+}
+
+.filters-list__work-with-requests-filters_hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.filters-list__transaction-log-filters_hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.filters-list__input-block {
+  width: 340px;
+  min-width: 300px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-list__input-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.filters-list__input-field {
+  font-size: 15px;
+  padding-left: 10px;
+  margin-top: 10px;
+  height: 32px;
+  border: 1px solid #D8E3FA;
+
+  &:hover {
+    border-color: #c7d8fb;
+  }
+
+  &:focus {
+    background-color: #EBF2FF;;
+  }
+
+  &::placeholder {
+    color: #B6BFD0;
+    font-size: 15px;
+  }
+}
+
+.filters-list__input-delete-svg {
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.filters-list__input-clear-svg {
+  position: absolute;
+  right: 14px;
+  top: 40px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  fill: #D8DDE6;
+  transition: fill 0.2s ease;
+
+  &:hover {
+    fill: hsl(0,0%,60%);
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .filters-list {
+    max-height: 580px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .filters-list {
+    max-height: 365px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .filters-list {
+    max-height: 490px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .filters-list {
+    max-height: 370px;
+    width: 360px;
+  }
+
+  .filters-list__input-block {
+    width: 340px;
+  }
+
+  .filters-list__input-label {
+    font-size: 14px;
+  }
+
+  .filters-list__input-field {
+    height: 28px;
+    font-size: 13px;
+
+    &::placeholder {
+      font-size: 13px;
+    }
+  }
+
+  .filters-list__input-clear-svg {
+    top: 36px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .filters-list {
+    max-height: 760px;
+    height:  760px;
+  }
+}
+
+@media screen and (min-height: 1100px) {
+  .filters-list {
+    max-height: 885px;
+    height:  885px;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  .filters-list {
+    max-height: 960px;
+    height:  960px;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  .filters-list {
+    height: 1110px;
+    max-height: 1110px;
+  }
+}
+
+@media screen and (min-height: 1500px) {
+  .filters-list {
+    height: 1560px;
+    max-height: 1560px;
+  }
 }

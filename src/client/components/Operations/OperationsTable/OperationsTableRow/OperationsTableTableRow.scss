@@ -1,0 +1,17 @@
+.operations-table-row__data {
+  position: relative;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.operations-table-row__alert-icon {
+  position: absolute;
+  width: 25px;
+  height: 16px;
+  top: 6px;
+  left: 65px;
+}

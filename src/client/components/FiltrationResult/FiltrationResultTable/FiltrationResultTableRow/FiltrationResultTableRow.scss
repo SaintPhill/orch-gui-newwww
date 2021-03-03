@@ -1,0 +1,22 @@
+.filtration-result-table-row__data {
+  position: relative;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
+.filtration-result-table-row__alert-icon {
+  position: absolute;
+  width: 25px;
+  height: 16px;
+  top: 6px;
+  left: 60px;
+}
+
+@media screen and (max-height: 650px) {
+  .filtration-result-table-row__alert-icon {
+    left: 55px;
+  }
+}

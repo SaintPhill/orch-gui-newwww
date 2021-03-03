@@ -1,0 +1,57 @@
+.date-range-picker {
+  width: 340px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.date-range-picker__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.date-range-picker__delete-svg {
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.date-range-picker__date-picker {
+  margin-top: 10px !important;
+  border-color: #D8E3FA !important;
+  height: 32px;
+
+  &:hover {
+    border-color: #c7d8fb !important;
+
+    .ant-picker-focused {
+      border-color: #c7d8fb !important;
+    }
+  }
+
+  input::placeholder, .ant-picker-suffix {
+    color: #B6BFD0 !important;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .date-range-picker {
+    width: 340px;
+  }
+
+  .date-range-picker__title {
+    font-size: 14px;
+  }
+
+  .date-range-picker__date-picker {
+    height: 28px;
+
+    input {
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+

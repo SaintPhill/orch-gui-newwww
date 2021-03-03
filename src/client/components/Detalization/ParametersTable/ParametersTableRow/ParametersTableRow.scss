@@ -1,0 +1,11 @@
+.parameters-table-row_selected {
+  background-color: #F2F7FF;
+}
+
+.parameters-table-row__data {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+}

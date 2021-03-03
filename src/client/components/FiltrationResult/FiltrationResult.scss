@@ -1,3 +1,116 @@
 .filtration-result {
-  flex-grow: 1;
+  position: relative;
+  height: 45%;
+}
+
+.filtration-result_full-screen {
+  height: 95%;
+}
+
+.filtration-result_hidden {
+  height: 40px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.filtration-result__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.filtration-result__title {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.filtration-result__toggle-icon {
+  width: 15px;
+  height: 16px;
+  margin-left: 10px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.filtration-result__toggle-icon_down {
+  transform: rotate(-90deg);
+}
+
+.filtration-result__success-message {
+  height: 25px;
+  position: absolute;
+  left: 25%;
+}
+
+.filtration-result__action-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  align-items: flex-end;
+}
+
+.filtration-result__action-buttons {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.filtration-result__pagination {
+  width: 430px;
+  height: 30px;
+  border: 1px solid #D9D9D9;
+}
+
+.filtration-result__load-xls-button {
+  width: 180px;
+}
+
+.filtration-result__create-mass-operation-button {
+  margin-left: 25px;
+  width: 270px;
+}
+
+.filtration-result__mass-operation-button {
+  width: 280px;
+  height: 50px;
+  color: #5E6065;
+  font-size: 20px;
+
+  &:hover {
+    color: #000000;
+    background-color: #EBF2FF;
+  }
+}
+
+.filtration-result__mass-operation-button_disabled:hover {
+  color: #5E6065;
+  background-color: #FFFFFF;
+}
+
+.filtration-result__mass-operation-success-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 620px;
+  margin: 50px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.filtration-result__mass-operation-success-popup-title {
+  margin-bottom: 20px;
+}
+
+.filtration-result__mass-operation-success-popup-ok-button {
+  margin-top: 50px;
+  width: 150px;
+}
+
+@media screen and (max-height: 768px) {
+  .filtration-result__title {
+    font-size: 20px;
+  }
 }

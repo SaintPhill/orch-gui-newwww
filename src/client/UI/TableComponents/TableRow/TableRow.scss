@@ -1,0 +1,26 @@
+.table-row {
+    border-bottom: 1px solid #DEE4F0;
+    height: 30px;
+}
+
+.table-row_cursor-pointer {
+    cursor: pointer;
+}
+
+.table-row_selected {
+    background-color: #F2F7FF;
+}
+
+.table-row_changed {
+    color: #5E6065;
+}
+
+@media screen and (max-height: 768px) {
+    .table-row {
+        height: 26px;
+    }
+
+    .table-row__alert-icon {
+        left: 55px;
+    }
+}

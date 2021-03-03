@@ -1,0 +1,26 @@
+.process-steps-table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.process-steps-table__action-buttons {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.process-steps-table__button {
+    width: 215px;
+
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .process-steps-table {
+    font-size: 13px;
+  }
+}

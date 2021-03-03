@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:f_boyko" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c42e0d01-2c30-488d-b2cb-b8c98d243e5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apollo.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/Button/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Button/ButtonTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/Button/ButtonTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Input/InputBehavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/Input/InputBehavior.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Input/InputTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/Input/InputTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/SvgIcon/SvgIconTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/SvgIcon/SvgIconTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/apollo-query-types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/App/AppTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/App/AppTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Detalization/Detalization.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Detalization/Detalization.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Detalization/DetalizationTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Detalization/DetalizationTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Detalization/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Detalization/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FilterItem/FiltersItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FilterItem/customStyles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FilterItem/customStylesMultiSelect.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/Filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/Filters.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersBehavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersBehavior.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersListBehavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersListBehavior.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersListConnect.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersListTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/FiltersListTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersList/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Filters/FiltersTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Filters/FiltersTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/FiltrationResult/FiltrationResult.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/FiltrationResult/FiltrationResult.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/FiltrationResult/FiltrationResultTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/FiltrationResult/FiltrationResultTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/FiltrationResult/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/FiltrationResult/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Header/HeaderTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Header/HeaderTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Header/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/SvgIcon/SvgIconTemplate.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/images/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/images/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/Authorization/Authorization.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/Authorization/AuthorizationBehavior.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/Authorization/AuthorizationTemplate.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/Authorization/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLayoutBehavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLayoutBehavior.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLayoutTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLayoutTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLaytout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/MainLaytout/MainLaytout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/datasources/FiltersAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/datasources/RequestsAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Filters/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Filters/resolvers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Filters/typeDefs.graphql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Requests/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Requests/resolvers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/Requests/typeDefs.graphql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schemas/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.server.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="role-model" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1fcuS7dcjpeOyQhazlWEOLQLvX6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedtslint" value="true" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.TypeScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\components\App" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\UI\ConfirmPopup" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\UI\TableComponents\TableRow" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\components\Filters\FlexibleSearch" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\components\Detalization\ProcessStepsTable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\UI\TableComponents" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\UI" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\components" />
+      <recent name="C:\Users\xxxdi\WebstormProjects\orch-gui-new\src\client\components\Detalization\HistoryTable\HistoryTableRow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="apollo-generate-types" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="apollo-generate-types" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="eslint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eslint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.apollo-generate-types" />
+      <item itemvalue="npm.server" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.eslint" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.eslint" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.eslint" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.eslint" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c42e0d01-2c30-488d-b2cb-b8c98d243e5a" name="Default Changelist" comment="" />
+      <created>1596529698986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596529698986</updated>
+      <workItem from="1596529700265" duration="14193000" />
+      <workItem from="1596612207311" duration="539000" />
+      <workItem from="1596612815529" duration="9901000" />
+      <workItem from="1596631371329" duration="2462000" />
+      <workItem from="1596634294572" duration="1408000" />
+      <workItem from="1596636186514" duration="798000" />
+      <workItem from="1596637001991" duration="198000" />
+      <workItem from="1596637510484" duration="2149000" />
+      <workItem from="1596699709234" duration="19872000" />
+      <workItem from="1596784988060" duration="21209000" />
+      <workItem from="1597044500798" duration="15723000" />
+      <workItem from="1597128768824" duration="15953000" />
+      <workItem from="1597217932626" duration="23867000" />
+      <workItem from="1597303218197" duration="14023000" />
+      <workItem from="1597389247482" duration="19753000" />
+      <workItem from="1597648113606" duration="22948000" />
+      <workItem from="1597734254234" duration="2486000" />
+      <workItem from="1597739307167" duration="18235000" />
+      <workItem from="1597823226008" duration="20464000" />
+      <workItem from="1597907242670" duration="9674000" />
+      <workItem from="1597922081875" duration="11841000" />
+      <workItem from="1597993778770" duration="4544000" />
+      <workItem from="1598009549031" duration="12354000" />
+      <workItem from="1598253904203" duration="19820000" />
+      <workItem from="1598339524987" duration="23200000" />
+      <workItem from="1598425016234" duration="15113000" />
+      <workItem from="1598513301764" duration="15564000" />
+      <workItem from="1598598086125" duration="16716000" />
+      <workItem from="1598620919978" duration="391000" />
+      <workItem from="1598621439007" duration="657000" />
+      <workItem from="1598858328583" duration="17822000" />
+      <workItem from="1598944352638" duration="18295000" />
+      <workItem from="1599117854529" duration="17918000" />
+      <workItem from="1599204306614" duration="11040000" />
+      <workItem from="1599222533853" duration="5772000" />
+      <workItem from="1599461414975" duration="16708000" />
+      <workItem from="1599548578221" duration="17700000" />
+      <workItem from="1599636369369" duration="14196000" />
+      <workItem from="1599722582617" duration="6261000" />
+      <workItem from="1599750380074" duration="605000" />
+      <workItem from="1599809265725" duration="4867000" />
+      <workItem from="1599825616455" duration="7755000" />
+      <workItem from="1600067038429" duration="14639000" />
+      <workItem from="1600157863830" duration="11496000" />
+      <workItem from="1600177807943" duration="3002000" />
+      <workItem from="1600240269869" duration="4951000" />
+      <workItem from="1600258915996" duration="3249000" />
+      <workItem from="1600327301220" duration="8562000" />
+      <workItem from="1600412552139" duration="17294000" />
+      <workItem from="1600672946584" duration="504000" />
+      <workItem from="1600673633335" duration="78000" />
+      <workItem from="1600674999902" duration="17577000" />
+      <workItem from="1600712929683" duration="1220000" />
+      <workItem from="1600761182889" duration="21183000" />
+      <workItem from="1600845641439" duration="10570000" />
+      <workItem from="1600860165581" duration="11024000" />
+      <workItem from="1600928199622" duration="24488000" />
+      <workItem from="1601015829463" duration="16172000" />
+      <workItem from="1601277973006" duration="23594000" />
+      <workItem from="1601305913958" duration="3226000" />
+      <workItem from="1601362464155" duration="20407000" />
+      <workItem from="1601449733919" duration="19772000" />
+      <workItem from="1601535763901" duration="5068000" />
+      <workItem from="1601543421054" duration="3663000" />
+      <workItem from="1601622320958" duration="12052000" />
+      <workItem from="1601645495622" duration="2072000" />
+      <workItem from="1601881174821" duration="18703000" />
+      <workItem from="1601967917104" duration="15816000" />
+      <workItem from="1602054317726" duration="19093000" />
+      <workItem from="1602141603662" duration="9449000" />
+      <workItem from="1602154717026" duration="9708000" />
+      <workItem from="1602226931546" duration="16220000" />
+      <workItem from="1602248767090" duration="2775000" />
+      <workItem from="1602486934143" duration="3160000" />
+      <workItem from="1602491323601" duration="574000" />
+      <workItem from="1602491916965" duration="14850000" />
+      <workItem from="1602572936612" duration="17249000" />
+      <workItem from="1602658613724" duration="9749000" />
+      <workItem from="1602746147849" duration="6671000" />
+      <workItem from="1602765025624" duration="4922000" />
+      <workItem from="1602830737861" duration="8015000" />
+      <workItem from="1602849495683" duration="2545000" />
+      <workItem from="1602858812492" duration="5311000" />
+      <workItem from="1603088496985" duration="11454000" />
+      <workItem from="1603178105751" duration="14215000" />
+      <workItem from="1603264122895" duration="10122000" />
+      <workItem from="1603284482314" duration="683000" />
+      <workItem from="1603289611259" duration="292000" />
+      <workItem from="1603350919055" duration="5083000" />
+      <workItem from="1603377353066" duration="1122000" />
+      <workItem from="1603436446834" duration="21139000" />
+      <workItem from="1603704224916" duration="170000" />
+      <workItem from="1603704428453" duration="13958000" />
+      <workItem from="1603870758216" duration="8931000" />
+      <workItem from="1603906551746" duration="606000" />
+      <workItem from="1603912944039" duration="321000" />
+      <workItem from="1603951966091" duration="4073000" />
+      <workItem from="1603962428331" duration="10155000" />
+      <workItem from="1604040267724" duration="3101000" />
+      <workItem from="1604062604734" duration="1810000" />
+      <workItem from="1604298454312" duration="10154000" />
+      <workItem from="1604310775861" duration="15000" />
+      <workItem from="1604321098766" duration="604000" />
+      <workItem from="1604323555102" duration="7000" />
+      <workItem from="1604387368061" duration="10280000" />
+      <workItem from="1604408178577" duration="1242000" />
+      <workItem from="1604471771097" duration="103000" />
+      <workItem from="1604557717285" duration="9553000" />
+      <workItem from="1604575744507" duration="2137000" />
+      <workItem from="1604580256185" duration="1214000" />
+      <workItem from="1604581797423" duration="588000" />
+      <workItem from="1604582519455" duration="6025000" />
+      <workItem from="1604644360122" duration="853000" />
+      <workItem from="1604648127246" duration="3859000" />
+      <workItem from="1604663042863" duration="2042000" />
+      <workItem from="1604669546159" duration="11000" />
+      <workItem from="1604673403127" duration="639000" />
+      <workItem from="1604904452962" duration="8888000" />
+      <workItem from="1604923395457" duration="2727000" />
+      <workItem from="1604926614010" duration="2749000" />
+      <workItem from="1604931312599" duration="1050000" />
+      <workItem from="1604932638071" duration="1348000" />
+      <workItem from="1604992595603" duration="4141000" />
+      <workItem from="1605006427983" duration="1505000" />
+      <workItem from="1605008794711" duration="407000" />
+      <workItem from="1605010344174" duration="2847000" />
+      <workItem from="1605013933629" duration="377000" />
+      <workItem from="1605017774713" duration="1581000" />
+      <workItem from="1605077428815" duration="12608000" />
+      <workItem from="1605167487654" duration="8416000" />
+      <workItem from="1605188423692" duration="2429000" />
+      <workItem from="1605251382171" duration="19742000" />
+      <workItem from="1605510413309" duration="13182000" />
+      <workItem from="1605596643048" duration="5253000" />
+      <workItem from="1605604719389" duration="675000" />
+      <workItem from="1605605703557" duration="3596000" />
+      <workItem from="1605611814408" duration="7463000" />
+      <workItem from="1605619357259" duration="3303000" />
+      <workItem from="1605622834835" duration="1441000" />
+      <workItem from="1605683183089" duration="5552000" />
+      <workItem from="1605691607192" duration="296000" />
+      <workItem from="1605697620536" duration="6461000" />
+      <workItem from="1605769309998" duration="7000000" />
+      <workItem from="1605857348102" duration="2126000" />
+      <workItem from="1605877305711" duration="1237000" />
+      <workItem from="1606117398611" duration="6907000" />
+      <workItem from="1606201574810" duration="1208000" />
+      <workItem from="1606222806736" duration="2381000" />
+      <workItem from="1606229540167" duration="708000" />
+      <workItem from="1606238820848" duration="30000" />
+      <workItem from="1606289410351" duration="4219000" />
+      <workItem from="1606335152965" duration="594000" />
+      <workItem from="1606375647420" duration="5007000" />
+      <workItem from="1606460410680" duration="1453000" />
+      <workItem from="1606551664654" duration="16000" />
+      <workItem from="1606645267649" duration="594000" />
+      <workItem from="1606719266781" duration="15478000" />
+      <workItem from="1606743614910" duration="9839000" />
+      <workItem from="1606815968487" duration="13562000" />
+      <workItem from="1606891965809" duration="5042000" />
+      <workItem from="1606984162363" duration="3489000" />
+      <workItem from="1607082738112" duration="702000" />
+      <workItem from="1607325195999" duration="3038000" />
+      <workItem from="1607412965481" duration="9549000" />
+      <workItem from="1607504631948" duration="1520000" />
+      <workItem from="1607521124908" duration="2330000" />
+      <workItem from="1607583695647" duration="6563000" />
+      <workItem from="1607609400729" duration="6000" />
+      <workItem from="1607670751802" duration="16907000" />
+      <workItem from="1607691775218" duration="4711000" />
+      <workItem from="1607929620521" duration="16902000" />
+      <workItem from="1607956053072" duration="597000" />
+      <workItem from="1608016157482" duration="16774000" />
+      <workItem from="1608102495057" duration="12058000" />
+      <workItem from="1608121418367" duration="7819000" />
+      <workItem from="1608189725855" duration="17793000" />
+      <workItem from="1608275713213" duration="11885000" />
+      <workItem from="1608296257067" duration="7011000" />
+      <workItem from="1608308444580" duration="698000" />
+      <workItem from="1608534565929" duration="21217000" />
+      <workItem from="1608582853796" duration="2000" />
+      <workItem from="1608619668060" duration="19550000" />
+      <workItem from="1608646003841" duration="975000" />
+      <workItem from="1608706588736" duration="15162000" />
+      <workItem from="1608729354511" duration="105000" />
+      <workItem from="1608731166786" duration="2715000" />
+      <workItem from="1608793088297" duration="14999000" />
+      <workItem from="1608879770898" duration="15427000" />
+      <workItem from="1609139568088" duration="10794000" />
+      <workItem from="1609226245196" duration="13139000" />
+      <workItem from="1609251010485" duration="2982000" />
+      <workItem from="1609312162615" duration="12521000" />
+      <workItem from="1609333839135" duration="1880000" />
+      <workItem from="1610349383730" duration="11527000" />
+      <workItem from="1610434959126" duration="11419000" />
+      <workItem from="1610456301451" duration="1891000" />
+      <workItem from="1610521843761" duration="7989000" />
+      <workItem from="1610549949923" duration="598000" />
+      <workItem from="1610608003041" duration="9585000" />
+      <workItem from="1610695402533" duration="322000" />
+      <workItem from="1610696453594" duration="2299000" />
+      <workItem from="1610698795574" duration="771000" />
+      <workItem from="1610699589340" duration="794000" />
+      <workItem from="1610700427901" duration="11290000" />
+      <workItem from="1610953246573" duration="15244000" />
+      <workItem from="1610978963406" duration="1608000" />
+      <workItem from="1610988666412" duration="286000" />
+      <workItem from="1611041440981" duration="9036000" />
+      <workItem from="1611126446118" duration="15139000" />
+      <workItem from="1611212580914" duration="20190000" />
+      <workItem from="1611296879624" duration="8170000" />
+      <workItem from="1611319456229" duration="1369000" />
+      <workItem from="1611557704650" duration="33254000" />
+      <workItem from="1611728052813" duration="8820000" />
+      <workItem from="1611817476517" duration="5692000" />
+      <workItem from="1611904184877" duration="11184000" />
+      <workItem from="1612162726857" duration="8038000" />
+      <workItem from="1612249393525" duration="7932000" />
+      <workItem from="1612335898363" duration="9914000" />
+      <workItem from="1612422678944" duration="3263000" />
+      <workItem from="1612509653286" duration="2230000" />
+      <workItem from="1612774902532" duration="39000" />
+      <workItem from="1612774961143" duration="62000" />
+      <workItem from="1612775043341" duration="101000" />
+      <workItem from="1612777154444" duration="1934000" />
+      <workItem from="1612857368075" duration="3761000" />
+      <workItem from="1612942699258" duration="3687000" />
+      <workItem from="1613026555041" duration="3541000" />
+      <workItem from="1613116956366" duration="1405000" />
+      <workItem from="1613148461760" duration="2350000" />
+      <workItem from="1613377079430" duration="12725000" />
+      <workItem from="1613459779456" duration="9094000" />
+      <workItem from="1613548847000" duration="1309000" />
+      <workItem from="1613554615406" duration="2712000" />
+      <workItem from="1613636695888" duration="534000" />
+      <workItem from="1613737390323" duration="594000" />
+      <workItem from="1613811342782" duration="8617000" />
+      <workItem from="1614150833958" duration="18852000" />
+      <workItem from="1614239161628" duration="8324000" />
+      <workItem from="1614247580791" duration="7610000" />
+      <workItem from="1614324042504" duration="9603000" />
+      <workItem from="1614582469641" duration="11130000" />
+      <workItem from="1614672016777" duration="9070000" />
+      <workItem from="1614752488816" duration="4572000" />
+      <workItem from="1614762346984" duration="405000" />
+    </task>
+    <task id="LOCAL-00128" summary="add step_execution, request_id, step_duration, step_status, step_error_code to findRequests()">
+      <created>1608559250533</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1608559250533</updated>
+    </task>
+    <task id="LOCAL-00129" summary="add step_execution, request_id, step_duration, step_status, step_error_code to findRequests()">
+      <created>1608559385519</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1608559385519</updated>
+    </task>
+    <task id="LOCAL-00130" summary="download Excel completed">
+      <created>1608621216540</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1608621216540</updated>
+    </task>
+    <task id="LOCAL-00131" summary="1366 x 768 layout">
+      <created>1608640139812</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1608640139814</updated>
+    </task>
+    <task id="LOCAL-00132" summary="flexible search layout complete">
+      <created>1608710217256</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1608710217257</updated>
+    </task>
+    <task id="LOCAL-00133" summary="add flexible search filter">
+      <created>1608714821642</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1608714821642</updated>
+    </task>
+    <task id="LOCAL-00134" summary="filters layout fix">
+      <created>1608731435971</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1608731435972</updated>
+    </task>
+    <task id="LOCAL-00135" summary="change file.xlsx to xls format">
+      <created>1608796648464</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1608796648465</updated>
+    </task>
+    <task id="LOCAL-00136" summary="merge request">
+      <created>1608797862672</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1608797862672</updated>
+    </task>
+    <task id="LOCAL-00137" summary="isAtLeastOneFilterSelected function upgrade. duration and flexible search filters clear by unmount">
+      <created>1608881097446</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1608881097447</updated>
+    </task>
+    <task id="LOCAL-00138" summary="add prompt to Process filter.">
+      <created>1608895786115</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1608895786115</updated>
+    </task>
+    <task id="LOCAL-00139" summary="delete GUID and FilterGroup filters">
+      <created>1609140524061</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1609140524061</updated>
+    </task>
+    <task id="LOCAL-00140" summary="update filtrationResult table main CHECKBOX">
+      <created>1609147080873</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1609147080873</updated>
+    </task>
+    <task id="LOCAL-00141" summary="update filtrationResult table selection">
+      <created>1609248837073</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1609248837079</updated>
+    </task>
+    <task id="LOCAL-00142" summary="update filtrationResult table selection. Delete meta table">
+      <created>1609335334229</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1609335334229</updated>
+    </task>
+    <task id="LOCAL-00143" summary="add MassOperations">
+      <created>1610436607956</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1610436607957</updated>
+    </task>
+    <task id="LOCAL-00144" summary="fix eslint warnings">
+      <created>1610437107174</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1610437107174</updated>
+    </task>
+    <task id="LOCAL-00145" summary="select Process filter when ProcessStep filter selected. add red placeholder to ProcessStep">
+      <created>1610523444056</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1610523444057</updated>
+    </task>
+    <task id="LOCAL-00146" summary="select Process filter when ProcessStep filter selected. add red placeholder to ProcessStep">
+      <created>1610523503818</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1610523503818</updated>
+    </task>
+    <task id="LOCAL-00147" summary="select Process filter when ProcessStep filter selected. add red placeholder to ProcessStep">
+      <created>1610524277861</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1610524277861</updated>
+    </task>
+    <task id="LOCAL-00148" summary="select Process filter when ProcessStep filter selected. add red placeholder to ProcessStep">
+      <created>1610612185913</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1610612185914</updated>
+    </task>
+    <task id="LOCAL-00149" summary="fix layout problems for 125% display 1920x1080">
+      <created>1610634118562</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1610634118564</updated>
+    </task>
+    <task id="LOCAL-00150" summary="rename MassOperations to Operations ans MassOperationDetalization to OperationDetalization">
+      <created>1610710397625</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1610710397626</updated>
+    </task>
+    <task id="LOCAL-00151" summary="unite all &lt;tr&gt; to one TableRow UI component">
+      <created>1610961853510</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1610961853510</updated>
+    </task>
+    <task id="LOCAL-00152" summary="add new filters to TransactionLog layout. OperationId, OperationType, Initiator, RequestId">
+      <created>1611056574508</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1611056574508</updated>
+    </task>
+    <task id="LOCAL-00153" summary="create WorkWithRequestFilters structure">
+      <created>1611127229024</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127229025</updated>
+    </task>
+    <task id="LOCAL-00154" summary="markChangedRequests by mass operation">
+      <created>1611137150786</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1611137150786</updated>
+    </task>
+    <task id="LOCAL-00155" summary="create ConfirmPopup">
+      <created>1611148481016</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1611148481016</updated>
+    </task>
+    <task id="LOCAL-00156" summary="add Detalization state to visibility slice">
+      <created>1611215176264</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1611215176264</updated>
+    </task>
+    <task id="LOCAL-00157" summary="add selectedParameter and selectedRequest to MainLayoutState.detalization">
+      <created>1611220269941</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1611220269942</updated>
+    </task>
+    <task id="LOCAL-00158" summary="disable filters action button when status FETCHING.">
+      <created>1611230612394</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1611230612394</updated>
+    </task>
+    <task id="LOCAL-00159" summary="add mass operation success popup">
+      <created>1611319596902</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1611319596903</updated>
+    </task>
+    <task id="LOCAL-00160" summary="add mass operation success popup">
+      <created>1611562530406</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1611562530407</updated>
+    </task>
+    <task id="LOCAL-00161" summary="add massOperations slice. getMassOperationsList method complete">
+      <created>1611649174758</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1611649174758</updated>
+    </task>
+    <task id="LOCAL-00162" summary="add pagination to MassOperations table">
+      <created>1611653580220</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1611653580220</updated>
+    </task>
+    <task id="LOCAL-00163" summary="add Mass Operation Detalization table">
+      <created>1611920854132</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1611920854135</updated>
+    </task>
+    <task id="LOCAL-00164" summary="add Mass Operation Detalization table">
+      <created>1611923011418</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1611923011418</updated>
+    </task>
+    <task id="LOCAL-00165" summary="add download excel mass operations list">
+      <created>1612183605528</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1612183605531</updated>
+    </task>
+    <task id="LOCAL-00166" summary="add search mass operations by params">
+      <created>1612437046545</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1612437046545</updated>
+    </task>
+    <task id="LOCAL-00167" summary="console store logs only in development. add hot reload">
+      <created>1613462253340</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1613462253341</updated>
+    </task>
+    <task id="LOCAL-00168" summary="delete 'isVisible' props from all popups">
+      <created>1613472218530</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1613472218530</updated>
+    </task>
+    <task id="LOCAL-00169" summary="add authorization slice. Authentication complete">
+      <created>1614243081904</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1614243081904</updated>
+    </task>
+    <task id="LOCAL-00170" summary="fix MoveToStepPopupBehavior, add selectedProcess props.">
+      <created>1614243710289</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1614243710289</updated>
+    </task>
+    <task id="LOCAL-00171" summary="fix &quot;BASE_URL&quot; // RestApi">
+      <created>1614244393145</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1614244393145</updated>
+    </task>
+    <task id="LOCAL-00172" summary="add administration button to Header">
+      <created>1614246653267</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1614246653267</updated>
+    </task>
+    <task id="LOCAL-00173" summary="add Role Module">
+      <created>1614585585841</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1614585585841</updated>
+    </task>
+    <task id="LOCAL-00174" summary="add user name in Header. add owner name to mass operations. refactor slices { payload }">
+      <created>1614590993320</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1614590993320</updated>
+    </task>
+    <task id="LOCAL-00175" summary="add user name to header. refactor slices {payload}">
+      <created>1614686435413</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1614686435414</updated>
+    </task>
+    <task id="LOCAL-00176" summary="fix authorization">
+      <created>1614686512338</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1614686512338</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="f_boyko" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename MassOperations to Operations ans MassOperationDetalization to OperationDetalization" />
+    <MESSAGE value="unite all &lt;tr&gt; to one TableRow UI component" />
+    <MESSAGE value="add new filters to TransactionLog layout. OperationId, OperationType, Initiator, RequestId" />
+    <MESSAGE value="create WorkWithRequestFilters structure" />
+    <MESSAGE value="markChangedRequests by mass operation" />
+    <MESSAGE value="create ConfirmPopup" />
+    <MESSAGE value="add Detalization state to visibility slice" />
+    <MESSAGE value="add selectedParameter and selectedRequest to MainLayoutState.detalization" />
+    <MESSAGE value="disable filters action button when status FETCHING." />
+    <MESSAGE value="add mass operation success popup" />
+    <MESSAGE value="add massOperations slice. getMassOperationsList method complete" />
+    <MESSAGE value="add pagination to MassOperations table" />
+    <MESSAGE value="add Mass Operation Detalization table" />
+    <MESSAGE value="add download excel mass operations list" />
+    <MESSAGE value="add search mass operations by params" />
+    <MESSAGE value="console store logs only in development. add hot reload" />
+    <MESSAGE value="delete 'isVisible' props from all popups" />
+    <MESSAGE value="add authorization slice. Authentication complete" />
+    <MESSAGE value="fix MoveToStepPopupBehavior, add selectedProcess props." />
+    <MESSAGE value="fix &quot;BASE_URL&quot; // RestApi" />
+    <MESSAGE value="add administration button to Header" />
+    <MESSAGE value="add Role Module" />
+    <MESSAGE value="add user name in Header. add owner name to mass operations. refactor slices { payload }" />
+    <MESSAGE value="add user name to header. refactor slices {payload}" />
+    <MESSAGE value="fix authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix authorization" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2748" y="412" key="#ESLint" timestamp="1606378272965">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2748" y="412" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606378272965" />
+    <state x="369" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610699722628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="369" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610699722628" />
+    <state x="208" y="93" width="1587" height="825" key="CommitChangelistDialog2" timestamp="1614686511690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="208" y="93" width="1587" height="825" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614686511690" />
+    <state x="2062" y="69" width="1506" height="827" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613466694027" />
+    <state x="172" y="113" width="1424" height="761" key="DiffContextDialog" timestamp="1614244004722">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="172" y="113" width="1424" height="761" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614244004722" />
+    <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1614251805475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614251805475" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614251544597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614251544597" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606551679047" />
+    <state width="1899" height="292" key="GridCell.Tab.0.bottom" timestamp="1614762759764">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760304822" />
+    <state width="1899" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614762759764" />
+    <state width="1899" height="292" key="GridCell.Tab.0.center" timestamp="1614762759764">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="292" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760304821" />
+    <state width="1899" height="292" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614762759764" />
+    <state width="1899" height="292" key="GridCell.Tab.0.left" timestamp="1614762759764">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="292" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760304821" />
+    <state width="1899" height="292" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614762759764" />
+    <state width="1899" height="292" key="GridCell.Tab.0.right" timestamp="1614762759764">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="292" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760304822" />
+    <state width="1899" height="292" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614762759764" />
+    <state x="184" y="12" width="1552" height="948" key="MergeDialog" timestamp="1614687454790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="12" width="1552" height="948" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614687454790" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1614687454795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614687454795" />
+    <state x="693" y="222" key="RollbackChangesDialog" timestamp="1614760731581">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760731581" />
+    <state x="2613" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613464349522" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1608299792262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608299792262" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614687267610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614687267610" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606376328418" />
+    <state x="476" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614583910602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="476" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614583910602" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614589756188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614589756188" />
+    <state x="358" y="134" width="1143" height="906" key="find.popup" timestamp="1614760762398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="358" y="134" width="1143" height="906" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760762398" />
+    <state x="2486" y="232" width="719" height="596" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613463166317" />
+    <state x="732" y="308" key="git4idea.merge.GitMergeDialog" timestamp="1614687295870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="308" key="git4idea.merge.GitMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614687295870" />
+    <state x="684" y="308" key="git4idea.merge.GitPullDialog" timestamp="1609232799120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="684" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609232799120" />
+    <state x="742" y="419" key="git4idea.ui.GitStashDialog" timestamp="1614686313437">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="419" key="git4idea.ui.GitStashDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614686313437" />
+    <state x="2662" y="419" key="git4idea.ui.GitStashDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613464306756" />
+    <state x="535" y="308" width="797" height="408" key="git4idea.ui.GitUnstashDialog" timestamp="1614686472974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="535" y="308" width="797" height="408" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614686472974" />
+    <state x="2455" y="308" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613464355992" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1614253267701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614253267701" />
+    <state x="953" y="53" width="672" height="678" key="search.everywhere.popup" timestamp="1614760739094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="53" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614760739094" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613465376674" />
+    <state x="2710" y="311" key="svn.repositoryBrowser" timestamp="1614762432714">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2710" y="311" key="svn.repositoryBrowser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614762432714" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/client/components/OperationDetalization/OperationDetalizationTemplate.tsx</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

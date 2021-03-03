@@ -1,0 +1,40 @@
+.move-to-step-popup-row:hover {
+  cursor: pointer;
+}
+
+.move-to-step-popup-row__data {
+  height: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.move-to-step-popup-row__data:not(:nth-child(2)) {
+  min-width: 180px;
+  max-width: 345px;
+}
+
+.move-to-step-popup-row__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #D8DDE6;
+  border-radius: 10px;
+  margin: 7px 5px 0 0;
+}
+
+.move-to-step-popup-row__checkbox_selected {
+  border-color: #3A7CFF;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #3A7CFF;
+    border-radius: 10px;
+  }
+}

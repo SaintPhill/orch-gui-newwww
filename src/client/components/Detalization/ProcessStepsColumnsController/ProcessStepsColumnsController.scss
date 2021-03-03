@@ -1,0 +1,43 @@
+.process-steps-columns-controller {
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  left: -175px;
+  z-index: 2;
+  list-style: none;
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 3px 1px #A8B7C7;
+  border-radius: 2px;
+  padding: 30px 0 15px 15px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 220px;
+    top: -9px;
+    width: 15px;
+    height: 15px;
+    background-color: #FFFF;
+    border-top: 1px solid #DEE4F0;
+    border-left: 1px solid #DEE4F0;
+    transform: rotate(45deg);
+  }
+}
+
+.process-steps-columns-controller__item {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.process-steps-columns-controller__column-name {
+  margin-left: 10px;
+}
+
+@media screen and (max-height: 768px) {
+  .process-steps-columns-controller__item {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+}

@@ -1,8 +1,9 @@
 .main-layout {
   display: flex;
+  overflow-x: hidden;
   flex-flow: column;
   height: 100vh;
-  padding: 0 35px 0 70px;
+  padding: 0 35px 0 50px;
 }
 
 .main-layout__side-bar {
@@ -13,20 +14,53 @@
   width: 30px;
 }
 
-.main-layout__show-filters-button {
+.main-layout__toggle-filters-button {
   margin-top: 85px;
   width: 30px;
   height: 50px;
   overflow: hidden;
 }
 
+.main-layout__toggle-filters-button_absolute {
+  display: none;
+}
+
 .main-layout__tables {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  padding-left: 15px;
+  overflow: hidden;
 }
 
 .main-layout__content {
   display: flex;
   flex-grow: 1;
   margin-top: 20px;
+}
+
+@media screen and (max-height: 768px) {
+  .main-layout {
+    padding-left: 20px;
+  }
+
+  .main-layout__content {
+    margin-top: 10px;
+  }
+
+  .main-layout__side-bar {
+     display: none;
+  }
+
+  .main-layout__toggle-filters-button_absolute {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 123;
+  }
+
+  .main-layout__toggle-filters-button_absolute-icon {
+    width: 30px;
+  }
 }

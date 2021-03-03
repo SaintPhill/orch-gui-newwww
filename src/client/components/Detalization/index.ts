@@ -1,1 +1,1 @@
-export { DetalizationTemplate as Detalization } from './DetalizationTemplate';
+export { DetalizationBehavior as Detalization } from './DetalizationBehavior';

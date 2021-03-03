@@ -103,7 +103,7 @@
     "@typescript-eslint/no-extra-parens": ["error"],
     "@typescript-eslint/semi": ["error", "always", { "omitLastInOneLineBlock": true}],
     "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "none" } }],
-    "@typescript-eslint/member-ordering": "warn",
+    "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/no-magic-numbers": [
       "error",
       {
@@ -111,7 +111,7 @@
         "ignoreEnums": true,
         "enforceConst": true,
         "ignoreReadonlyClassProperties": true,
-        "ignore": [0, 24, 60, 1000]
+        "ignore": [0, 1, 2, 24, 60, 1000]
       }
     ],
     "@typescript-eslint/brace-style": ["error", "1tbs"],

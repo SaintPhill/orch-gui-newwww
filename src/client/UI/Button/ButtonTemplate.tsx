@@ -2,45 +2,52 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { SvgIcon } from '../SvgIcon';
+import { SpriteId } from '../SvgIcon/SvgIconTemplate';
 import './Button.scss';
 
+export enum ButtonTheme {
+    blue = 'blue',
+    white = 'white',
+}
+
 interface Props {
-    svgId?: string
-    theme?: string
-    isPrimary?: boolean
+    svgId?: SpriteId
+    theme?: ButtonTheme
     className?: string
     children?: React.ReactNode
-    onClick?: (
+    isDisabled?: boolean
+    onClick?(
         event?: React.MouseEvent<HTMLElement>
         | React.FormEvent<HTMLFormElement>,
-    ) => void
+    ): void
 }
 
 export function ButtonTemplate({
-    isPrimary,
     children,
     onClick,
     svgId,
     className,
     theme,
+    isDisabled,
 }: Props): JSX.Element {
     const ROOT_CLASS = 'button';
     const btnClass = classNames(
         ROOT_CLASS,
         {
-            [`${ROOT_CLASS}_theme_${theme}`]: !!theme,
-            [`${ROOT_CLASS}_theme_${theme}-primary`]: !!theme && isPrimary,
-            [String(className)]: !!className,
+            [`${className}`]: !!className,
+            [`${className}_disabled`]: !!className && isDisabled,
+            [`${ROOT_CLASS}_theme-${theme}`]: !!theme,
+            [`${ROOT_CLASS}_theme-${theme}_disabled`]: isDisabled && theme,
         }
     );
 
     return (
-        <button className={btnClass} onClick={onClick}>
+        <button disabled={isDisabled} className={btnClass} onClick={onClick}>
             {children}
             {svgId &&
                 <SvgIcon
                     spriteId={svgId}
-                    className={`${className}-icon`}
+                    className={`${className?.split(' ')[0]}-icon`}
                 />
             }
         </button>

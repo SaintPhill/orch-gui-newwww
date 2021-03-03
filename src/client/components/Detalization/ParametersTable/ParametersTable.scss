@@ -1,0 +1,19 @@
+.parameters-table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.parameters-table__change-parameter-button {
+  width: 215px;
+  position: absolute;
+  bottom: 5px;
+  right: 35px;
+}
+
+@media screen and (max-height: 768px) {
+  .parameters-table {
+    font-size: 13px;
+  }
+}

@@ -1,9 +1,11 @@
 .button {
+    height: 35px;
     padding: 0;
     cursor: pointer;
     border: none;
     outline: none;
     background: none;
+    font-size: 16px;
 
     // Eliminates dotted focus outlines in Firefox
     &::-moz-focus-inner {
@@ -11,28 +13,66 @@
     }
 }
 
-.button_theme_blue {
-    width: 176px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button_theme-blue {
     border: 1px solid #3A7CFF;
     border-radius: 6px;
-    background: #FFFFFF;
-    font-family: 'Roboto medium', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    background-color: #3A7CFF;
+    color: #FFFFFF;
+
+    &:hover {
+        box-shadow: 0 3px 12px rgba(58, 124, 255, 0.3);
+    }
+
+    &:active {
+        border: 1px solid #2A36B1;
+        background-color: #2A36B1;
+    }
+}
+
+.button_theme-blue_disabled {
+    border: 1px solid #D8DDE6;
+    background-color: #D8DDE6;
+    color: #FFFFFF;
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    &:active {
+        border: 1px solid #D8DDE6;
+        background-color: #D8DDE6;
+    }
+}
+
+.button_theme-white {
+    border: 1px solid #3A7CFF;
+    border-radius: 6px;
+    background-color: #FFFFFF;
     color: #3A7CFF;
+
+    &:hover {
+        box-shadow: 0 3px 12px rgba(58, 124, 255, 0.3);
+    }
+
+    &:active {
+        border: 1px solid #2A36B1;
+        color: #2A36B1;
+    }
 }
 
-.button_theme_blue-primary {
-    background: #3A7CFF;
-    border-color: #3A7CFF;
-    color: #FFFFFF
+.button_theme-white_disabled {
+    border: 1px solid #AFB5C1;
+    background-color: #FFFFFF;
+    color: #AFB5C1;
+
+    &:hover {
+        box-shadow: none;
+    }
 }
 
-
-
+@media screen and (max-height: 768px) {
+    .button {
+        height: 30px;
+        font-size: 14px;
+    }
+}

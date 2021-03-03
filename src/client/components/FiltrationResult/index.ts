@@ -1,1 +1,1 @@
-export { FiltrationResultTemplate as FiltrationResult } from './FiltrationResultTemplate';
+export { FiltrationResultBehavior as FiltrationResult } from './FiltrationResultBehavior';

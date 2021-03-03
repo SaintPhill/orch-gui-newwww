@@ -1,0 +1,17 @@
+.filtration-result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.filtration-result-table__loading-spinner {
+  position: absolute;
+  left: 50%;
+  margin-top: 8%;
+}
+
+@media screen and (max-height: 650px) {
+  .filtration-result-table {
+    font-size: 13px;
+  }
+}

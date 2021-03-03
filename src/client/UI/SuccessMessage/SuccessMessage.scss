@@ -1,0 +1,29 @@
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 615px;
+    height: 40px;
+    padding: 13px 0 13px 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #B7EB8F;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(183, 235, 143, 1);
+}
+
+.success-message__icon {
+    width: 15px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.success-message__text {
+    font-size: 16px;
+}
+
+@media screen and (max-height: 768px) {
+    .success-message {
+        width: 390px;
+        height: 30px;
+    }
+}

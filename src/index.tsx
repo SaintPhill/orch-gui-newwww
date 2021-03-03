@@ -1,22 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
 import { App } from './client/components/App';
+import configureStore from './store';
+import { loadConfig } from './store/RestApi/filtersOptionsAPI';
+import { getFiltersOptions } from './store/StoreSlices/filtersOptions';
 import './index.scss';
 
+const store = configureStore();
 
-const client = new ApolloClient({
-    uri: 'http://localhost:4000/',
-    cache: new InMemoryCache(),
-});
+(async () => {
+    await loadConfig();
+    store.dispatch(getFiltersOptions());
+})();
 
-ReactDOM.render(
-    <React.StrictMode>
-        <ApolloProvider client={client}>
+function renderApp(): void {
+    render(
+        <Provider store={store}>
             <App />
-        </ApolloProvider>
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+        </Provider>,
+        document.getElementById('root')
+    );
+}
 
+if (process.env.NODE_ENV !== 'production' && module.hot) {
+    module.hot.accept('./client/components/App', renderApp);
+}
+
+renderApp();
